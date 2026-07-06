@@ -108,7 +108,7 @@ export default function HomePage({
       />
 
       {/* International patients — gerçek Batumi fotoğrafı */}
-      <section className="mx-auto max-w-6xl px-6 py-16 md:py-24">
+      <section className="mx-auto max-w-6xl px-6 py-12 md:py-16">
         <Reveal>
           <div className="relative flex min-h-[380px] flex-col justify-center overflow-hidden rounded-[var(--radius-card)] text-white md:min-h-[460px]">
             <Image
@@ -141,21 +141,31 @@ export default function HomePage({
         items={faqLocalized}
         heading={t("faqHeading")}
         eyebrow={t("faqEyebrow")}
+        support={t("faqSupport")}
+        contactLabel={t("faqContact")}
       />
 
-      {/* Contact + disclaimer */}
-      <section className="mx-auto max-w-6xl px-6 py-16 md:py-24">
-        <h2 className="font-serif text-3xl leading-[1.12] tracking-[-0.01em] text-ink md:text-4xl">
-          {t("contactHeading")}
-        </h2>
-        <p className="measure mt-4 leading-relaxed text-ink-muted">{t("contactBody")}</p>
-        <div className="mt-7">
-          <Link href="/contact" className={btn("primary", "md")}>
-            {t("heroCtaPrimary")}
-          </Link>
-        </div>
-        <div className="mt-12">
-          <MedicalDisclaimer variant="medical" />
+      {/* Kapanış CTA — hafif brand-tinted band (ağırlık + genişliği doldurur) */}
+      <section className="bg-brand-50/60">
+        <div className="mx-auto max-w-6xl px-6 py-12 md:py-16">
+          <div className="grid items-center gap-8 md:grid-cols-[1.4fr_1fr] md:gap-16">
+            <div>
+              <h2 className="font-serif text-3xl leading-[1.12] tracking-[-0.01em] text-ink md:text-4xl">
+                {t("contactHeading")}
+              </h2>
+              <p className="mt-4 max-w-md leading-relaxed text-ink-muted">
+                {t("contactBody")}
+              </p>
+            </div>
+            <div className="md:justify-self-end">
+              <Link href="/contact" className={btn("primary", "lg")}>
+                {t("heroCtaPrimary")}
+              </Link>
+            </div>
+          </div>
+          <div className="mt-10">
+            <MedicalDisclaimer variant="medical" />
+          </div>
         </div>
       </section>
     </>

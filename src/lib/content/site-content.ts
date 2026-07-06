@@ -283,6 +283,108 @@ export const departmentsContent: Record<string, DepartmentContent> =
       },
       {
         "heading": {
+          "en": "Treatment laboratory framework",
+          "tr": "Tedavi laboratuvarı çerçevesi"
+        },
+        "intro": {
+          "en": "A treatment laboratory is one in which human tissue, cells or genetic material is modified with advanced technology and molecular methods for therapeutic, supportive or reparative purposes. By field of activity, treatment laboratories are classified into the following categories:",
+          "tr": "Tedavi laboratuvarı; insan dokusu, hücresi veya genetik materyalin ileri teknoloji ve moleküler yöntemlerle modifiye edilerek tedavi, destekleyici veya onarıcı amaçlarla kullanıldığı laboratuvardır. Faaliyet alanına göre tedavi laboratuvarları aşağıdaki kategorilere ayrılır:"
+        },
+        "items": [
+          {
+            "title": {
+              "en": "Gene therapy & gene-editing laboratories",
+              "tr": "Gen tedavisi ve gen düzenleme laboratuvarları"
+            },
+            "body": {
+              "en": "Work with the therapeutic modification of genetic material, including gene-editing methods.",
+              "tr": "Gen düzenleme yöntemleri dâhil, genetik materyalin terapötik modifikasyonuyla çalışır."
+            }
+          },
+          {
+            "title": {
+              "en": "Cellular therapy laboratories",
+              "tr": "Hücresel tedavi laboratuvarları"
+            },
+            "body": {
+              "en": "Prepare and process cell-based preparations for therapeutic, supportive or reparative use.",
+              "tr": "Terapötik, destekleyici veya onarıcı kullanım için hücre temelli preparatları hazırlar ve işler."
+            }
+          },
+          {
+            "title": {
+              "en": "RNA/DNA-based therapy laboratories",
+              "tr": "RNA/DNA temelli tedavi laboratuvarları"
+            },
+            "body": {
+              "en": "Focus on nucleic-acid-based approaches within molecular therapeutics.",
+              "tr": "Moleküler terapötikte nükleik asit temelli yaklaşımlara odaklanır."
+            }
+          },
+          {
+            "title": {
+              "en": "Proteomics laboratories",
+              "tr": "Proteomik laboratuvarları"
+            },
+            "body": {
+              "en": "Study proteins and protein-level processes relevant to diagnosis and therapy.",
+              "tr": "Tanı ve tedaviyle ilgili proteinleri ve protein düzeyindeki süreçleri inceler."
+            }
+          },
+          {
+            "title": {
+              "en": "Regenerative medicine laboratories",
+              "tr": "Rejeneratif tıp laboratuvarları"
+            },
+            "body": {
+              "en": "Work within regenerative-medicine research, supporting the body's own repair processes.",
+              "tr": "Vücudun kendi onarım süreçlerini destekleyen rejeneratif tıp araştırmaları kapsamında çalışır."
+            }
+          },
+          {
+            "title": {
+              "en": "Stem cell laboratories",
+              "tr": "Kök hücre laboratuvarları"
+            },
+            "body": {
+              "en": "Isolate, culture and process stem cells under defined, controlled conditions.",
+              "tr": "Kök hücreleri tanımlı ve kontrollü koşullar altında izole eder, kültürler ve işler."
+            }
+          },
+          {
+            "title": {
+              "en": "Monoclonal antibody & biologics laboratories",
+              "tr": "Monoklonal antikor ve biyolojik ürün laboratuvarları"
+            },
+            "body": {
+              "en": "Develop monoclonal antibodies and biological products.",
+              "tr": "Monoklonal antikorlar ve biyolojik ürünler geliştirir."
+            }
+          },
+          {
+            "title": {
+              "en": "Nano-medicine & exosome-based laboratories",
+              "tr": "Nano-tıp ve ekzozom temelli laboratuvarlar"
+            },
+            "body": {
+              "en": "Work with nano-medicine and exosome-based methods.",
+              "tr": "Nano-tıp ve ekzozom temelli yöntemlerle çalışır."
+            }
+          },
+          {
+            "title": {
+              "en": "Where our laboratory sits",
+              "tr": "Laboratuvarımızın yeri"
+            },
+            "body": {
+              "en": "Within this framework, the Stem Cell Therapy Laboratory works across the regenerative-medicine, stem cell and exosome/nano-medicine categories, under a single institutional standard.",
+              "tr": "Bu çerçeve içinde Kök Hücre Tedavi Laboratuvarı; rejeneratif tıp, kök hücre ve ekzozom/nano-tıp kategorilerinde, tek bir kurumsal standart altında çalışır."
+            }
+          }
+        ]
+      },
+      {
+        "heading": {
           "en": "Application Areas",
           "tr": "Uygulama Alanları"
         },
@@ -293,62 +395,112 @@ export const departmentsContent: Record<string, DepartmentContent> =
         "items": [
           {
             "title": {
-              "en": "Neurological conditions (Alzheimer's, Multiple Sclerosis, Cerebral Palsy)",
-              "tr": "Nörolojik durumlar (Alzheimer, Multipl Skleroz, Serebral Palsi)"
+              "en": "Demyelinating & neuro-immune conditions",
+              "tr": "Demiyelinizan ve nöro-immün durumlar"
             },
             "body": {
-              "en": "Cell-based approaches for neurological conditions such as Alzheimer's disease, Multiple Sclerosis (MS), and Cerebral Palsy are areas of ongoing scientific investigation. The research status varies by condition and remains uncertain; applications are considered investigational. Outcomes vary, and no therapeutic benefit is implied. Consult your physician.",
-              "tr": "Alzheimer hastalığı, Multipl Skleroz (MS) ve Serebral Palsi gibi nörolojik durumlarda hücre temelli yaklaşımlar, süregelen bilimsel araştırmaların konusudur. Araştırma statüsü duruma göre değişir ve belirsizliğini korur; uygulamalar araştırma aşamasında kabul edilir. Sonuçlar değişkendir ve herhangi bir tedavi yararı ima edilmez. Hekiminize danışın."
+              "en": "Studied areas include Multiple Sclerosis (MS), Neuromyelitis Optica Spectrum Disorder (NMO / Devic's disease), MOG antibody disease (MOGAD), Neuro-Behçet, lupus (SLE) myelitis and neurological Lyme disease. Cell-based approaches for these conditions are investigational; the evidence differs by condition and is not settled. Nothing here is a treatment or cure — individual outcomes vary and suitability is assessed only by your physician.",
+              "tr": "İncelenen alanlar arasında Multipl Skleroz (MS), Nöromiyelitis Optika Spektrum Bozukluğu (NMO / Devic hastalığı), MOG antikor hastalığı (MOGAD), Nöro-Behçet, lupus (SLE) miyeliti ve nörolojik Lyme hastalığı yer alır. Bu durumlarda hücre temelli yaklaşımlar araştırma aşamasındadır; kanıtlar duruma göre değişir ve kesinleşmemiştir. Buradaki hiçbir ifade tedavi veya iyileştirme değildir — sonuçlar kişiden kişiye değişir, uygunluk yalnızca hekiminiz tarafından değerlendirilir."
             }
           },
           {
             "title": {
-              "en": "Metabolic and organ-related conditions (Diabetes, Cirrhosis, Idiopathic Pulmonary Fibrosis)",
-              "tr": "Metabolik ve organ ilişkili durumlar (Diyabet, Siroz, İdiyopatik Pulmoner Fibrozis)"
+              "en": "Neurodegenerative & motor-neuron conditions",
+              "tr": "Nörodejeneratif ve motor-nöron durumları"
             },
             "body": {
-              "en": "Conditions such as diabetes, cirrhosis, and idiopathic pulmonary fibrosis are studied in regenerative research contexts. For these areas the evidence base may be limited, and the research status can be uncertain. Any application is investigational; results vary from person to person. A physician's assessment is essential.",
-              "tr": "Diyabet, siroz ve idiyopatik pulmoner fibrozis gibi durumlar, rejeneratif araştırma bağlamlarında incelenmektedir. Bu alanlarda kanıt tabanı sınırlı olabilir ve araştırma statüsü belirsiz olabilir. Herhangi bir uygulama araştırma aşamasındadır; sonuçlar kişiden kişiye değişir. Bir hekim değerlendirmesi zorunludur."
+              "en": "This group includes Amyotrophic Lateral Sclerosis (ALS), Parkinson's disease and Charcot-Marie-Tooth disease (peroneal muscular atrophy). These are areas of active scientific investigation; for most, cell-based approaches remain unproven and are considered investigational. No therapeutic benefit is implied, results vary, and any decision must be made with your treating physician.",
+              "tr": "Bu grup Amiyotrofik Lateral Skleroz (ALS), Parkinson hastalığı ve Charcot-Marie-Tooth hastalığını (peroneal kas atrofisi) içerir. Bunlar aktif bilimsel araştırma alanlarıdır; çoğu için hücre temelli yaklaşımlar kanıtlanmamıştır ve araştırma niteliğinde kabul edilir. Herhangi bir tedavi yararı ima edilmez, sonuçlar değişir ve her karar tedaviyi yürüten hekiminizle verilmelidir."
             }
           },
           {
             "title": {
-              "en": "Cardiovascular and circulatory conditions (Cardiovascular disease, Hypertension)",
-              "tr": "Kardiyovasküler ve dolaşım durumları (Kalp-damar hastalığı, Hipertansiyon)"
+              "en": "Ataxias & movement disorders",
+              "tr": "Ataksiler ve hareket bozuklukları"
             },
             "body": {
-              "en": "Cardiovascular disease and hypertension are among the areas explored in regenerative medicine research. The research status is not settled and may be uncertain. Cell applications here are investigational and are not offered as a cure. Individual outcomes vary and should be discussed with your treating physician.",
-              "tr": "Kalp-damar hastalığı ve hipertansiyon, rejeneratif tıp araştırmalarında incelenen alanlar arasındadır. Araştırma statüsü kesinleşmemiştir ve belirsiz olabilir. Buradaki hücre uygulamaları araştırma aşamasındadır ve bir tedavi olarak sunulmaz. Bireysel sonuçlar değişir ve sizi izleyen hekiminizle görüşülmelidir."
+              "en": "Areas studied include Multisystem Atrophy (MSA), Friedreich's ataxia, cerebellar ataxia, generalized dystonia and Spinal Muscular Atrophy (SMA). For several of these the evidence is very limited and the research status is uncertain. Applications are investigational, are not offered as a cure, and individual outcomes vary — a physician's assessment is essential.",
+              "tr": "İncelenen alanlar arasında Multisistem Atrofi (MSA), Friedreich ataksisi, serebellar ataksi, jeneralize distoni ve Spinal Musküler Atrofi (SMA) bulunur. Bunların birçoğu için kanıt oldukça sınırlıdır ve araştırma statüsü belirsizdir. Uygulamalar araştırma aşamasındadır, tedavi olarak sunulmaz ve bireysel sonuçlar değişir — hekim değerlendirmesi zorunludur."
             }
           },
           {
             "title": {
-              "en": "Autoimmune conditions (Rheumatoid Arthritis, Ankylosing Spondylitis, SLE)",
-              "tr": "Otoimmün durumlar (Romatoid Artrit, Ankilozan Spondilit, SLE)"
+              "en": "Spinal cord & acquired brain injury",
+              "tr": "Omurilik ve edinsel beyin hasarı"
             },
             "body": {
-              "en": "Autoimmune conditions including rheumatoid arthritis, ankylosing spondylitis, and systemic lupus erythematosus (SLE) are studied within cell-based research. The evidence for such applications remains under investigation and its status may be uncertain. No claim of treatment or cure is made; results vary. Consult your physician before considering any option.",
-              "tr": "Romatoid artrit, ankilozan spondilit ve sistemik lupus eritematozus (SLE) dahil otoimmün durumlar, hücre temelli araştırmalar kapsamında incelenmektedir. Bu tür uygulamalara yönelik kanıtlar araştırma aşamasındadır ve statüsü belirsiz olabilir. Tedavi veya iyileştirme iddiasında bulunulmaz; sonuçlar değişir. Herhangi bir seçeneği düşünmeden önce hekiminize danışın."
+              "en": "Studied areas include spinal cord injury, transverse myelitis, Guillain-Barré syndrome sequelae, cerebral palsy, hypoxic and traumatic brain injury, and hemiplegia. Regenerative approaches here are researched with cell-based methods; the research status differs and may be uncertain. These are investigational, not presented as treatments, and outcomes vary individually. Consult your physician.",
+              "tr": "İncelenen alanlar arasında omurilik yaralanması, transvers miyelit, Guillain-Barré sendromu sekelleri, serebral palsi, hipoksik ve travmatik beyin hasarı ile hemipleji yer alır. Buradaki rejeneratif yaklaşımlar hücre temelli yöntemlerle araştırılır; araştırma statüsü farklılık gösterir ve belirsiz olabilir. Bunlar araştırma aşamasındadır, tedavi olarak sunulmaz ve sonuçlar bireysel olarak değişir. Hekiminize danışın."
             }
           },
           {
             "title": {
-              "en": "Musculoskeletal and injury-related areas (Osteoarthritis, Muscular Dystrophy, Sports injuries, Spinal cord injury)",
-              "tr": "Kas-iskelet ve yaralanma ilişkili alanlar (Osteoartrit, Kas Distrofisi, Spor yaralanmaları, Omurilik yaralanması)"
+              "en": "Peripheral & functional neurology",
+              "tr": "Periferik ve fonksiyonel nöroloji"
             },
             "body": {
-              "en": "Osteoarthritis, muscular dystrophy, sports injuries, and spinal cord injury are areas where regenerative approaches are being researched. The research status differs across these conditions and may be uncertain. Applications are investigational, and outcomes vary between individuals. These are not presented as treatments or cures; a physician's evaluation is required.",
-              "tr": "Osteoartrit, kas distrofisi, spor yaralanmaları ve omurilik yaralanması, rejeneratif yaklaşımların araştırıldığı alanlardır. Araştırma statüsü bu durumlar arasında farklılık gösterir ve belirsiz olabilir. Uygulamalar araştırma aşamasındadır ve sonuçlar bireyden bireye değişir. Bunlar tedavi veya iyileştirme olarak sunulmaz; bir hekim değerlendirmesi gereklidir."
+              "en": "Areas explored include peripheral nerve damage, polyneuropathy, neurogenic bladder, trigeminal neuralgia, anosmia/parosmia, isolated epilepsy and essential (senile) tremor. Cell-based approaches remain investigational and the evidence differs by condition. No benefit is promised, results vary from person to person, and suitability is determined only by your physician.",
+              "tr": "İncelenen alanlar arasında periferik sinir hasarı, polinöropati, nörojenik mesane, trigeminal nevralji, anozmi/parozmi, izole epilepsi ve esansiyel (senil) tremor yer alır. Hücre temelli yaklaşımlar araştırma aşamasında kalır ve kanıtlar duruma göre değişir. Hiçbir yarar vaat edilmez, sonuçlar kişiden kişiye değişir ve uygunluk yalnızca hekiminiz tarafından belirlenir."
             }
           },
           {
             "title": {
-              "en": "Other studied areas (Autism, Anti-aging)",
-              "tr": "Diğer incelenen alanlar (Otizm, Yaşlanma karşıtı yaklaşımlar)"
+              "en": "Ophthalmology & audiology",
+              "tr": "Oftalmoloji ve odyoloji"
             },
             "body": {
-              "en": "Areas such as autism and anti-aging are sometimes discussed in the context of regenerative research. Evidence in these areas is particularly limited and the research status is uncertain. Any application is investigational and results vary; no benefit is promised. These topics should be approached cautiously and only with physician guidance.",
-              "tr": "Otizm ve yaşlanma karşıtı yaklaşımlar gibi alanlar zaman zaman rejeneratif araştırma bağlamında ele alınır. Bu alanlardaki kanıtlar özellikle sınırlıdır ve araştırma statüsü belirsizdir. Herhangi bir uygulama araştırma aşamasındadır ve sonuçlar değişir; hiçbir yarar vaat edilmez. Bu konulara temkinli ve yalnızca hekim rehberliğinde yaklaşılmalıdır."
+              "en": "Studied areas include retinitis pigmentosa, macular degeneration, optic atrophy and optic neuritis, nerve-related vision loss, nerve-related hearing loss and tinnitus. These are areas of ongoing regenerative research; the status is uncertain and cell applications here are investigational. Individual outcomes vary and are not guaranteed — always consult your physician.",
+              "tr": "İncelenen alanlar arasında retinitis pigmentoza, makula dejenerasyonu, optik atrofi ve optik nörit, sinir kaynaklı görme kaybı, sinir kaynaklı işitme kaybı ve tinnitus yer alır. Bunlar süregelen rejeneratif araştırma alanlarıdır; statü belirsizdir ve buradaki hücre uygulamaları araştırma aşamasındadır. Bireysel sonuçlar değişir ve garanti edilmez — daima hekiminize danışın."
+            }
+          },
+          {
+            "title": {
+              "en": "Cognitive & neurodevelopmental areas",
+              "tr": "Kognitif ve nörogelişimsel alanlar"
+            },
+            "body": {
+              "en": "This group includes dementia, frontotemporal dementia, Alzheimer's disease, autism and Asperger syndrome. Evidence in these areas is particularly limited and the research status is uncertain; any application is investigational and results vary. No benefit is promised. These topics should be approached cautiously and only with physician guidance.",
+              "tr": "Bu grup demans, frontotemporal demans, Alzheimer hastalığı, otizm ve Asperger sendromunu içerir. Bu alanlardaki kanıtlar özellikle sınırlıdır ve araştırma statüsü belirsizdir; herhangi bir uygulama araştırma aşamasındadır ve sonuçlar değişir. Hiçbir yarar vaat edilmez. Bu konulara temkinli ve yalnızca hekim rehberliğinde yaklaşılmalıdır."
+            }
+          },
+          {
+            "title": {
+              "en": "Muscular dystrophies",
+              "tr": "Kas distrofileri"
+            },
+            "body": {
+              "en": "Areas studied include Duchenne muscular dystrophy (DMD), Limb-Girdle muscular dystrophies (LGMD) and sarcoglycanopathies. For these genetic muscle conditions the evidence is limited and the research status is uncertain; applications are investigational and are not presented as a cure. Outcomes vary individually and require a physician's assessment.",
+              "tr": "İncelenen alanlar arasında Duchenne musküler distrofisi (DMD), Limb-Girdle musküler distrofileri (LGMD) ve sarkoglikanopatiler yer alır. Bu genetik kas durumları için kanıt sınırlıdır ve araştırma statüsü belirsizdir; uygulamalar araştırma aşamasındadır ve tedavi olarak sunulmaz. Sonuçlar bireysel olarak değişir ve hekim değerlendirmesi gerektirir."
+            }
+          },
+          {
+            "title": {
+              "en": "Orthopedic, vascular & wound areas",
+              "tr": "Ortopedik, vasküler ve yara alanları"
+            },
+            "body": {
+              "en": "Studied areas include advanced osteoarthritis (grade III-IV), avascular/aseptic necrosis, temporomandibular joint osteoarthritis, diabetic foot, pressure (decubitus) ulcers and Buerger's disease. Regenerative approaches here are researched; the research status differs and may be uncertain. Applications are investigational, outcomes vary, and a physician's evaluation is required.",
+              "tr": "İncelenen alanlar arasında ileri osteoartrit (evre III-IV), avasküler/aseptik nekroz, temporomandibular eklem osteoartriti, diyabetik ayak, bası (dekübit) yaraları ve Buerger hastalığı yer alır. Buradaki rejeneratif yaklaşımlar araştırılır; araştırma statüsü farklılık gösterir ve belirsiz olabilir. Uygulamalar araştırma aşamasındadır, sonuçlar değişir ve hekim değerlendirmesi gereklidir."
+            }
+          },
+          {
+            "title": {
+              "en": "Autoimmune, rheumatic & allergic areas (exosome-based)",
+              "tr": "Otoimmün, romatizmal ve alerjik alanlar (eksozom temelli)"
+            },
+            "body": {
+              "en": "Using autologous exosome-based approaches, studied areas include rheumatoid arthritis, ankylosing spondylitis, psoriasis, fibromyalgia, Hashimoto's thyroiditis, Sjögren's syndrome, ulcerative colitis, early-grade gonarthrosis, migraine and allergic conditions (allergic asthma, eczema, urticaria). These applications are investigational; the evidence differs by condition and is not settled. No treatment or cure is claimed, results vary, and a physician's assessment is essential.",
+              "tr": "Otolog eksozom temelli yaklaşımlarla incelenen alanlar arasında romatoid artrit, ankilozan spondilit, sedef (psoriazis), fibromiyalji, Hashimoto tiroiditi, Sjögren sendromu, ülseratif kolit, erken evre gonartroz, migren ve alerjik durumlar (alerjik astım, egzama, ürtiker) yer alır. Bu uygulamalar araştırma aşamasındadır; kanıtlar duruma göre değişir ve kesinleşmemiştir. Tedavi veya iyileştirme iddiasında bulunulmaz, sonuçlar değişir ve hekim değerlendirmesi zorunludur."
+            }
+          },
+          {
+            "title": {
+              "en": "Aesthetic & topical applications (PES)",
+              "tr": "Estetik ve topikal uygulamalar (PES)"
+            },
+            "body": {
+              "en": "Alongside laboratory research, autologous exosome / PES-based aesthetic and topical applications are described — including skin, scar, hair and dermatological care and a range of topical care products. These are cosmetic and supportive in nature, are not medical treatments for disease, and individual results vary. A specialist should assess suitability.",
+              "tr": "Laboratuvar araştırmalarının yanında, otolog eksozom / PES temelli estetik ve topikal uygulamalar tanımlanır — cilt, iz (skar), saç ve dermatolojik bakım ile bir dizi topikal bakım ürünü dâhil. Bunlar doğası gereği kozmetik ve destekleyicidir, hastalıklar için tıbbi tedavi değildir ve bireysel sonuçlar değişir. Uygunluğu bir uzman değerlendirmelidir."
             }
           }
         ]

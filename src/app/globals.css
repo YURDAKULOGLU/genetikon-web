@@ -95,23 +95,6 @@ body {
   text-transform: uppercase;
 }
 
-/* İmza sahnesi (LabSequence) — masaüstünde pinned crossfade için panel'ler üst
-   üste yığılır. Enhancement YALNIZ JS + lg + motion-ok olunca (.is-enhanced)
-   devreye girer; aksi halde panel'ler normal dikey akışta kalır (SSR-safe,
-   her zaman görünür + erişilebilir). */
-@media (min-width: 1024px) {
-  .lab-seq.is-enhanced .lab-stage {
-    height: 100vh;
-    overflow: hidden;
-  }
-  .lab-seq.is-enhanced .lab-panel {
-    position: absolute;
-    inset: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-}
-
 /* Focus craft (§4.5): box-shadow ring, outline degil, 2px offset */
 :where(a, button, input, textarea, select, [tabindex]):focus-visible {
   outline: none;

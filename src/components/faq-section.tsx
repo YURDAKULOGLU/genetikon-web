@@ -1,3 +1,5 @@
+import { Link } from "@/lib/i18n/navigation";
+
 type QA = { q: string; a: string };
 
 /**
@@ -5,15 +7,22 @@ type QA = { q: string; a: string };
  * <details> JS gerektirmez, erişilebilirdir ve kapalıyken bile içerik DOM'da
  * (crawler + answer-engine okur). Google FAQ rich result'ı yetkili sağlık
  * sitelerine açar; schema her hâlükârda AI/answer-engine için değerlidir.
+ *
+ * 2-kolon: sol sticky başlık + destek metni + iletişim linki (boşluğu doldurur,
+ * UX değeri katar); sağ accordion. Böylece geniş container'da sağ yarı boş kalmaz.
  */
 export function FaqSection({
   items,
   heading,
   eyebrow,
+  support,
+  contactLabel,
 }: {
   items: QA[];
   heading: string;
   eyebrow: string;
+  support: string;
+  contactLabel: string;
 }) {
   const jsonLd = {
     "@context": "https://schema.org",
@@ -26,19 +35,31 @@ export function FaqSection({
   };
 
   return (
-    <section className="mx-auto max-w-6xl px-6 py-16 md:py-24">
+    <section className="mx-auto max-w-6xl px-6 py-14 md:py-16">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <div className="max-w-3xl">
-        <p className="text-[0.8125rem] font-semibold uppercase tracking-[0.14em] text-brand-700">
-          {eyebrow}
-        </p>
-        <h2 className="mt-3 font-serif text-3xl leading-[1.12] tracking-[-0.01em] text-ink md:text-4xl">
-          {heading}
-        </h2>
-        <div className="mt-10 divide-y divide-divider border-y border-divider">
+      <div className="grid gap-8 md:grid-cols-[0.85fr_1.15fr] md:gap-16">
+        <div className="md:sticky md:top-28 md:self-start">
+          <p className="text-[0.8125rem] font-semibold uppercase tracking-[0.14em] text-brand-700">
+            {eyebrow}
+          </p>
+          <h2 className="mt-3 font-serif text-3xl leading-[1.12] tracking-[-0.01em] text-ink md:text-4xl">
+            {heading}
+          </h2>
+          <p className="mt-5 max-w-sm leading-relaxed text-ink-muted">
+            {support}
+          </p>
+          <Link
+            href="/contact"
+            className="mt-6 inline-flex items-center gap-2 font-medium text-brand-700 transition-colors hover:text-brand-900"
+          >
+            {contactLabel}
+            <span aria-hidden>→</span>
+          </Link>
+        </div>
+        <div className="divide-y divide-divider border-y border-divider">
         {items.map((it) => (
           <details key={it.q} className="group py-1">
             <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5 font-serif text-lg text-brand-900 transition-colors hover:text-brand-700 [&::-webkit-details-marker]:hidden">

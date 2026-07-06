@@ -3,39 +3,40 @@
 import { useEffect } from "react";
 
 /**
- * Lenis smooth scroll + GSAP ScrollTrigger senkronizasyonu.
+ * Lenis smooth scroll — YALNIZCA dokunmatik cihazlarda (telefon/tablet).
  *
- * lenis/gsap/ScrollTrigger DİNAMİK import edilir — initial JS bundle'a girmezler
- * (perf: legal/about/contact gibi sayfalar scroll-motion runtime'ı taşımaz;
- * LabSequence ile aynı async chunk'ı paylaşır). prefers-reduced-motion açıksa
- * hiçbiri yüklenmez. Lenis, gsap.ticker'ıyla sürülüp her scroll'da
- * ScrollTrigger.update çağrılır — pin/scrub'ın zıplamadan çalışmasının kanonik yolu.
+ * Karar: PC'de native scroll kullanılır (owner isteği + kurumsal-medikal
+ * standardı: masaüstü smooth-wheel bir ajans flourish'i; native scroll daha
+ * güvenilir, jank yok). Dokunmatikte Lenis hafif bir momentum verir.
+ *
+ * - `prefers-reduced-motion` açıksa hiçbir şey yüklenmez.
+ * - `pointer: fine` (fare) → bail → PC native scroll.
+ * - GSAP/ScrollTrigger YOK (statik layout'ta scroll-driven animasyon kalmadı).
+ * - lenis DİNAMİK import — initial bundle'a girmez.
  */
 export function SmoothScroll() {
   useEffect(() => {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    // Sadece dokunmatik: fare/trackpad (fine pointer) varsa native scroll.
+    if (!window.matchMedia("(pointer: coarse)").matches) return;
 
     let cleanup: (() => void) | undefined;
     let disposed = false;
 
     void (async () => {
-      const [{ default: Lenis }, { default: gsap }, { ScrollTrigger }] =
-        await Promise.all([
-          import("lenis"),
-          import("gsap"),
-          import("gsap/ScrollTrigger"),
-        ]);
+      const { default: Lenis } = await import("lenis");
       if (disposed) return;
 
-      gsap.registerPlugin(ScrollTrigger);
-      const lenis = new Lenis({ duration: 1.05, smoothWheel: true });
-      lenis.on("scroll", ScrollTrigger.update);
-      const tick = (time: number) => lenis.raf(time * 1000);
-      gsap.ticker.add(tick);
-      gsap.ticker.lagSmoothing(0);
+      const lenis = new Lenis({ duration: 1.05, smoothWheel: true, syncTouch: true });
+      let rafId = 0;
+      const raf = (time: number) => {
+        lenis.raf(time);
+        rafId = requestAnimationFrame(raf);
+      };
+      rafId = requestAnimationFrame(raf);
 
       cleanup = () => {
-        gsap.ticker.remove(tick);
+        cancelAnimationFrame(rafId);
         lenis.destroy();
       };
     })();

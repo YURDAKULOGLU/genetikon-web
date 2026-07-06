@@ -25,9 +25,9 @@ export function SiteHeader() {
             height={89}
             priority
             unoptimized
-            className="h-6 w-auto sm:h-9"
+            className="h-7 w-auto self-start object-contain sm:h-10"
           />
-          <span className="mt-1 hidden text-[0.7rem] uppercase tracking-[0.13em] text-ink-soft sm:block">
+          <span className="mt-1.5 hidden text-[0.66rem] uppercase tracking-[0.08em] text-ink-soft sm:block">
             Genetics Center · Stem Cell Therapy Laboratory
           </span>
         </Link>
