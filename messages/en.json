@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "home": {
+      "title": "Genetikon Genetics Center — Medical Genetics, Stem Cell Therapy & IVF",
+      "description": "Genetikon Genetics Center in Batumi, Georgia: medical genetics laboratory, stem cell therapy laboratory and IVF center. Informational and international-patient friendly."
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "departments": "Departments",
+    "about": "About",
+    "information": "Information Center",
+    "internationalPatients": "International Patients",
+    "contact": "Contact"
+  },
+  "home": {
+    "heroKicker": "Genetics Center — Stem Cell Therapy Laboratory",
+    "heroTitle": "Medical genetics, stem cell therapy and fertility care",
+    "heroSubtitle": "Three specialized laboratories under one center in Batumi, Georgia — for patients seeking clarity, evidence and careful guidance.",
+    "heroCtaPrimary": "Request information",
+    "heroCtaSecondary": "Explore departments",
+    "trustLine": "Informational content · Patient confidentiality · International coordination",
+    "departmentsHeading": "Our Departments",
+    "departmentsLede": "One center, three specialized laboratories — genetics, regenerative medicine and reproductive care under a single clinical standard.",
+    "internationalHeading": "International Patients",
+    "internationalKicker": "Batumi · Georgia",
+    "internationalBody": "Batumi is easy to reach. We help you plan your visit with multilingual coordination, travel and accommodation guidance.",
+    "contactHeading": "Get in touch",
+    "contactBody": "Tell us what you need and we will respond with the right information.",
+    "faqEyebrow": "FAQ",
+    "faqHeading": "Frequently asked questions",
+    "trust": {
+      "labs": "Three specialized laboratories",
+      "center": "One center · Batumi, Georgia",
+      "lang": "Bilingual care · EN / TR",
+      "care": "International patients welcome",
+      "trustHeading": "Why patients choose Genetikon"
+    }
+  },
+  "departments": {
+    "medicalGenetics": {
+      "name": "Medical Genetics Laboratory",
+      "summary": "Genetic counseling, screening and diagnostic testing, prenatal diagnosis, NIPT and PGT.",
+      "cta": "Learn about genetic testing"
+    },
+    "stemCell": {
+      "name": "Stem Cell Therapy Laboratory",
+      "summary": "Regenerative medicine — protocol-based, autologous cultured stem cell processes and honest, hedged information.",
+      "cta": "Learn about our approach"
+    },
+    "ivf": {
+      "name": "IVF Center",
+      "summary": "IVF/ICSI, donation, surrogacy and PGD — with realistic, informational guidance for international patients.",
+      "cta": "Learn about fertility care"
+    }
+  },
+  "disclaimer": {
+    "medical": "This content is for information only and does not replace medical advice. Outcomes vary from patient to patient. Please consult your physician before any procedure.",
+    "stemCell": "Regulatory and evidence status varies by indication. Some applications are investigational; results are not guaranteed and vary by patient."
+  },
+  "form": {
+    "title": "Request information",
+    "name": "Full name",
+    "contact": "Email or phone",
+    "message": "Your message",
+    "messageHint": "Please do not include sensitive health information in this field.",
+    "consent": "I have read the privacy notice and agree to be contacted about my request.",
+    "submit": "Send request",
+    "mailtoNote": "Sending opens your email app; your request goes to batumi@genetikon.com.",
+    "responseNote": "We usually respond within 1–2 business days.",
+    "errorRequired": "Please fill in your name, contact and consent."
+  },
+  "footer": {
+    "rights": "Genetikon Genetics Center",
+    "editor": "Site editor contact: batumi@genetikon.com",
+    "lastUpdated": "Last updated",
+    "privacy": "Privacy Notice",
+    "cookies": "Cookie Policy",
+    "terms": "Terms of Use"
+  },
+  "cookie": {
+    "text": "We use only strictly necessary cookies by default. Analytics cookies load only with your consent.",
+    "accept": "Accept analytics",
+    "reject": "Necessary only",
+    "learnMore": "Cookie Policy"
+  },
+  "sticky": {
+    "whatsapp": "WhatsApp",
+    "call": "Call",
+    "contact": "Contact us"
+  },
+  "a11y": {
+    "skipToContent": "Skip to content"
+  }
+}

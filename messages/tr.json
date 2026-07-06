@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "home": {
+      "title": "Genetikon Genetics Center — Tıbbi Genetik, Kök Hücre ve Tüp Bebek",
+      "description": "Batum, Gürcistan'da Genetikon Genetics Center: tıbbi genetik laboratuvarı, kök hücre tedavi laboratuvarı ve tüp bebek merkezi. Bilgilendirici ve uluslararası hasta dostu."
+    }
+  },
+  "nav": {
+    "home": "Ana Sayfa",
+    "departments": "Bölümlerimiz",
+    "about": "Kurumsal",
+    "information": "Bilgi Merkezi",
+    "internationalPatients": "Uluslararası Hastalar",
+    "contact": "İletişim"
+  },
+  "home": {
+    "heroKicker": "Genetics Center — Stem Cell Therapy Laboratory",
+    "heroTitle": "Tıbbi genetik, kök hücre tedavisi ve üreme sağlığı",
+    "heroSubtitle": "Batum, Gürcistan'da tek merkezde üç uzman laboratuvar — netlik, kanıt ve dikkatli yönlendirme arayan hastalar için.",
+    "heroCtaPrimary": "Bilgi talep edin",
+    "heroCtaSecondary": "Bölümleri keşfedin",
+    "trustLine": "Bilgilendirici içerik · Hasta gizliliği · Uluslararası koordinasyon",
+    "departmentsHeading": "Bölümlerimiz",
+    "departmentsLede": "Tek merkez, üç uzman laboratuvar — genetik, rejeneratif tıp ve üreme sağlığı tek bir klinik standart altında.",
+    "internationalHeading": "Uluslararası Hastalar",
+    "internationalKicker": "Batum · Gürcistan",
+    "internationalBody": "Batum'a ulaşım kolaydır. Çok dilli koordinasyon, seyahat ve konaklama yönlendirmesiyle ziyaretinizi planlamanıza yardımcı oluruz.",
+    "contactHeading": "İletişime geçin",
+    "contactBody": "İhtiyacınızı iletin, doğru bilgiyle geri dönelim.",
+    "faqEyebrow": "SSS",
+    "faqHeading": "Sık sorulan sorular",
+    "trust": {
+      "labs": "Üç uzman laboratuvar",
+      "center": "Tek merkez · Batum, Gürcistan",
+      "lang": "Çift dilli · EN / TR",
+      "care": "Uluslararası hastalara açık",
+      "trustHeading": "Neden Genetikon"
+    }
+  },
+  "departments": {
+    "medicalGenetics": {
+      "name": "Tıbbi Genetik Laboratuvarı",
+      "summary": "Genetik danışma, tarama ve tanı testleri, prenatal tanı, NIPT ve PGT.",
+      "cta": "Genetik testleri inceleyin"
+    },
+    "stemCell": {
+      "name": "Kök Hücre Tedavi Laboratuvarı",
+      "summary": "Rejeneratif tıp — protokol temelli, otolog kültür kök hücre süreçleri ve dürüst, temkinli bilgilendirme.",
+      "cta": "Yaklaşımımızı inceleyin"
+    },
+    "ivf": {
+      "name": "Tüp Bebek Merkezi",
+      "summary": "IVF/ICSI, donasyon, taşıyıcı annelik ve PGD — uluslararası hastalar için gerçekçi, bilgilendirici yönlendirme.",
+      "cta": "Üreme sağlığını inceleyin"
+    }
+  },
+  "disclaimer": {
+    "medical": "Bu içerik yalnızca bilgilendirme amaçlıdır ve tıbbi tavsiye yerine geçmez. Sonuçlar kişiden kişiye değişebilir. Herhangi bir işlem öncesinde hekiminize danışın.",
+    "stemCell": "Düzenleyici ve kanıt durumu endikasyona göre değişir. Bazı uygulamalar araştırma aşamasındadır; sonuçlar garanti edilmez ve kişiye göre değişir."
+  },
+  "form": {
+    "title": "Bilgi talep edin",
+    "name": "Ad soyad",
+    "contact": "E-posta veya telefon",
+    "message": "Mesajınız",
+    "messageHint": "Lütfen bu alana hassas sağlık bilgisi yazmayın.",
+    "consent": "Aydınlatma metnini okudum ve talebimle ilgili benimle iletişime geçilmesini kabul ediyorum.",
+    "submit": "Talebi gönder",
+    "mailtoNote": "Gönder düğmesi e-posta uygulamanızı açar; talebiniz batumi@genetikon.com adresine iletilir.",
+    "responseNote": "Genellikle 1–2 iş günü içinde yanıtlıyoruz.",
+    "errorRequired": "Lütfen ad, iletişim ve onay alanlarını doldurun."
+  },
+  "footer": {
+    "rights": "Genetikon Genetics Center",
+    "editor": "Site editörü iletişim: batumi@genetikon.com",
+    "lastUpdated": "Son güncelleme",
+    "privacy": "Aydınlatma Metni",
+    "cookies": "Çerez Politikası",
+    "terms": "Kullanım Şartları"
+  },
+  "cookie": {
+    "text": "Varsayılan olarak yalnızca zorunlu çerezleri kullanırız. Analitik çerezler yalnızca rızanızla yüklenir.",
+    "accept": "Analitiği kabul et",
+    "reject": "Sadece zorunlu",
+    "learnMore": "Çerez Politikası"
+  },
+  "sticky": {
+    "whatsapp": "WhatsApp",
+    "call": "Ara",
+    "contact": "İletişim"
+  },
+  "a11y": {
+    "skipToContent": "İçeriğe geç"
+  }
+}

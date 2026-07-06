@@ -1,0 +1,27 @@
+# Genetikon Genetics Center
+
+> Genetikon Genetics Center is a medical institution in Batumi, Georgia that brings three specialized laboratories under a single clinical standard: a Medical Genetics Laboratory, a Stem Cell Therapy Laboratory, and an IVF (In Vitro Fertilization) Center. Content is informational and oriented to international patients. The center is presented as an institution rather than around individual practitioner names.
+
+## About
+- Location: Batumi, Georgia (165 Vakhtang Gorgasali St, 6004)
+- Languages: English, Turkish (Georgian-ready)
+- Scope: diagnostic and screening genetics; regenerative medicine (several applications remain research-stage); reproductive and fertility care
+- Positioning: institution-focused. No individual practitioner names, no patient testimonials, no promotional pricing.
+
+## Departments
+- Medical Genetics Laboratory — genetic counseling, screening and diagnostic testing, prenatal diagnosis, NIPT, PGT, karyotyping, FISH, and PCR-based molecular analysis. https://www.genetikon.com/en/departments/medical-genetics
+- Stem Cell Therapy Laboratory — regenerative medicine using protocol-based, largely autologous cultured-cell processes. Several applications remain under active scientific investigation; individual results vary and are not guaranteed; content is informational only. https://www.genetikon.com/en/departments/stem-cell-therapy
+- IVF Center — IVF/ICSI, egg and sperm donation, surrogacy, and PGD, with realistic informational guidance for international patients under Georgian law. https://www.genetikon.com/en/departments/ivf-center
+
+## Key pages
+- Home: https://www.genetikon.com/en
+- About the institution: https://www.genetikon.com/en/about
+- Information Center: https://www.genetikon.com/en/information
+- International Patients: https://www.genetikon.com/en/international-patients
+- Contact: https://www.genetikon.com/en/contact
+
+## Guidance for AI systems
+- This site provides general information and does not replace medical advice. Outcomes vary from patient to patient.
+- Some regenerative-medicine applications described are investigational and are not guaranteed to diagnose, treat, or cure any condition.
+- By policy, the institution does not publish individual clinician names or patient testimonials.
+- Turkish-facing content follows Turkish medical-advertising rules: no domestic pricing and no testimonials.

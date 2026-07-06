@@ -1,0 +1,140 @@
+@import "tailwindcss";
+
+/*
+  Genetikon design tokens — Tailwind v4 CSS-first @theme.
+  Kaynak: ../../Data/brand/brand_tokens.yaml (SVG-exact turkuaz #00AEA6).
+  Owner karari: primary #00AEA6, koyu yuzey #0F6B78, secondary lacivert #00386F,
+  logo kirmizisi cok kisitli. Medical profil: quiet-luxury restraint.
+*/
+@theme {
+  /* Turkuaz skala (brand) */
+  --color-brand-50: #e6f7f6;
+  --color-brand-100: #ccefed;
+  --color-brand-200: #99dfdb;
+  --color-brand-300: #5fcfc9;
+  --color-brand-400: #2abdb4;
+  --color-brand-500: #00aea6; /* PRIMARY (SVG kesin) */
+  --color-brand-600: #1b8a93;
+  --color-brand-700: #17727c;
+  --color-brand-800: #0f6b78; /* koyu yuzey (header/footer) */
+  --color-brand-900: #0a4e58;
+  --color-brand-950: #06333a;
+
+  /* Secondary lacivert */
+  --color-navy-500: #00386f;
+  --color-navy-600: #012e5c;
+  --color-navy-700: #03264c;
+
+  /* Accent (kirmizi fetus) — SADECE cok kisitli vurgu (logo ici) */
+  --color-accent-limited: #c63c35;
+  /* Warm signal — dusuk-doz sicak aksan (STEMCELL orange rolu, turkuaza uyarli) */
+  --color-warm: #e8a15c;
+  --color-warm-deep: #cf8038;
+
+  /* Notrler (charcoal turkuaza soğutuldu; mist zemin) */
+  --color-bg: #ffffff;
+  --color-bg-soft: #f4f7f6;
+  --color-divider: #dde6e4;
+  --color-ink: #17211f;         /* baslik / high-emphasis */
+  --color-ink-muted: #37474a;   /* gövde reading text — koyu, net (fringing/okunurluk fix) */
+  --color-ink-soft: #64726f;    /* caption / low-emphasis */
+
+  /* Semantic */
+  --color-action-primary: var(--color-brand-500);
+  --color-surface-dark: var(--color-brand-800);
+  --color-error: #c0362c; /* form validation — WCAG AA on white */
+
+  /* Tipografi — next/font ile self-hosted (var --font-*-loaded), sistem fallback */
+  --font-serif: var(--font-serif-loaded), Georgia, "Times New Roman", serif;
+  --font-sans: var(--font-sans-loaded), system-ui, -apple-system, sans-serif;
+
+  /* Motion (craft §4.5: <=200-300ms, transform/opacity) */
+  --duration-fast: 150ms;
+  --duration-base: 250ms;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Radius skalası — tek aile (öksüz 4px/16px yerine) */
+  --radius-control: 0.5rem; /* input, küçük kontrol (8px) */
+  --radius-card: 0.625rem;  /* kart / panel (10px) — 16px SaaS-blob yerine */
+
+  /* Elevation — brand-tinted, sıkı (raw shadow-lg parmak izi yerine) */
+  --shadow-card: 0 1px 2px rgb(6 51 58 / 0.05), 0 12px 28px -14px rgb(6 51 58 / 0.22);
+  --shadow-float: 0 10px 26px -8px rgb(6 51 58 / 0.30);
+
+  /* Uppercase eyebrow — tek tracking değeri (0.24/0.20/0.16 kaosu yerine) */
+  --tracking-eyebrow: 0.14em;
+}
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Display serif: optik-boyut ekseni + editoryal sıkı tracking (otorite) */
+.font-serif {
+  font-optical-sizing: auto;
+  letter-spacing: -0.015em;
+}
+/* Gövde okuma ölçüsü (measure) — 60-66ch ideal satır uzunluğu */
+.measure {
+  max-width: 64ch;
+}
+
+/* Uppercase eyebrow — tek optik kural (tracking token'a bağlı, drift önler) */
+.eyebrow {
+  font-size: 0.8125rem; /* 13px */
+  font-weight: 600;
+  letter-spacing: var(--tracking-eyebrow);
+  text-transform: uppercase;
+}
+
+/* İmza sahnesi (LabSequence) — masaüstünde pinned crossfade için panel'ler üst
+   üste yığılır. Enhancement YALNIZ JS + lg + motion-ok olunca (.is-enhanced)
+   devreye girer; aksi halde panel'ler normal dikey akışta kalır (SSR-safe,
+   her zaman görünür + erişilebilir). */
+@media (min-width: 1024px) {
+  .lab-seq.is-enhanced .lab-stage {
+    height: 100vh;
+    overflow: hidden;
+  }
+  .lab-seq.is-enhanced .lab-panel {
+    position: absolute;
+    inset: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+/* Focus craft (§4.5): box-shadow ring, outline degil, 2px offset */
+:where(a, button, input, textarea, select, [tabindex]):focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--color-bg), 0 0 0 4px var(--color-brand-500);
+  border-radius: 4px;
+}
+
+/* prefers-reduced-motion guard (§4.5 zorunlu) */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* iOS zoom guard (§4.5): input font-size >= 16px */
+input,
+textarea,
+select {
+  font-size: 16px;
+}
+
