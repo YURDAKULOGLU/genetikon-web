@@ -1,8 +1,12 @@
 import { expect, test } from "@playwright/test";
+import { routing } from "../src/lib/i18n/routing";
 
 const coreRoutes = [
   "/en",
   "/tr",
+  "/ru",
+  "/ka",
+  "/az",
   "/en/about",
   "/en/information",
   "/en/international-patients",
@@ -70,8 +74,13 @@ test.describe("UI/UX and functional production surface", () => {
     await expect(page.getByLabel("Cookie consent")).toBeHidden();
 
     await page.goto("/en/about", { waitUntil: "networkidle" });
+    const localeSwitcher = page.getByRole("group", { name: "Language" });
+    await expect(localeSwitcher.getByRole("button")).toHaveCount(routing.locales.length);
+
     await page.getByRole("button", { name: "TR" }).click();
     await expect(page).toHaveURL(/\/tr\/about$/);
+    await page.getByRole("button", { name: "RU" }).click();
+    await expect(page).toHaveURL(/\/ru\/about$/);
     await page.getByRole("button", { name: "EN" }).click();
     await expect(page).toHaveURL(/\/en\/about$/);
   });
@@ -120,14 +129,12 @@ test.describe("UI/UX and functional production surface", () => {
       "href",
       "https://www.genetikon.com/en/about",
     );
-    await expect(page.locator('link[hreflang="en"]')).toHaveAttribute(
-      "href",
-      "https://www.genetikon.com/en/about",
-    );
-    await expect(page.locator('link[hreflang="tr"]')).toHaveAttribute(
-      "href",
-      "https://www.genetikon.com/tr/about",
-    );
+    for (const loc of routing.locales) {
+      await expect(page.locator(`link[hreflang="${loc}"]`)).toHaveAttribute(
+        "href",
+        `https://www.genetikon.com/${loc}/about`,
+      );
+    }
 
     await page.goto("/tr/departments/medical-genetics", { waitUntil: "networkidle" });
     await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
@@ -138,8 +145,9 @@ test.describe("UI/UX and functional production surface", () => {
     const sitemap = await request.get("/sitemap.xml");
     expect(sitemap.ok()).toBe(true);
     const sitemapXml = await sitemap.text();
-    expect(sitemapXml).toContain("https://www.genetikon.com/en/about");
-    expect(sitemapXml).toContain("https://www.genetikon.com/tr/about");
+    for (const loc of routing.locales) {
+      expect(sitemapXml).toContain(`https://www.genetikon.com/${loc}/about`);
+    }
     expect(sitemapXml).not.toContain("<loc>https://www.genetikon.com/about</loc>");
   });
 });

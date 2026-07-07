@@ -4,7 +4,7 @@
 
 ## About
 - Location: Batumi, Georgia (165 Vakhtang Gorgasali St, 6004)
-- Languages: English, Turkish (Georgian-ready)
+- Languages: English, Turkish, Russian, Georgian, Azerbaijani (auto-selected by visitor region)
 - Scope: diagnostic and screening genetics; regenerative medicine (several applications remain research-stage); reproductive and fertility care
 - Positioning: institution-focused. No individual practitioner names, no patient testimonials, no promotional pricing.
 

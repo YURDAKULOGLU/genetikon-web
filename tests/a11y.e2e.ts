@@ -4,6 +4,9 @@ import { AxeBuilder } from "@axe-core/playwright";
 const routes = [
   "/en",
   "/tr",
+  "/ru",
+  "/ka",
+  "/az",
   "/en/departments/medical-genetics",
   "/en/departments/stem-cell-therapy",
   "/en/departments/ivf-center",
