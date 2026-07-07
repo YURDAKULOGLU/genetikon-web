@@ -47,11 +47,14 @@ export function SiteHeader() {
             </NavLink>
           ))}
         </nav>
-        <LocaleSwitcher />
+        {/* Masaüstünde switcher üst satırda; mobilde alttaki nav satırına taşınır (5 pill sığsın). */}
+        <div className="hidden shrink-0 lg:block">
+          <LocaleSwitcher />
+        </div>
       </div>
       <nav
         aria-label="Primary mobile"
-        className="mx-auto flex max-w-6xl flex-wrap gap-x-2 gap-y-1 border-t border-brand-100 px-4 py-2 text-sm font-medium text-brand-900 lg:hidden"
+        className="mx-auto flex max-w-6xl flex-wrap items-center gap-x-2 gap-y-2 border-t border-brand-100 px-4 py-2 text-sm font-medium text-brand-900 lg:hidden"
       >
         {navItems.map((item) => (
           <NavLink
@@ -64,6 +67,9 @@ export function SiteHeader() {
             {t(item.key)}
           </NavLink>
         ))}
+        <div className="ml-auto">
+          <LocaleSwitcher />
+        </div>
       </nav>
     </header>
   );

@@ -2,7 +2,15 @@
 // Kaynak: Data/content/departments.md + archive. Medical-compliance uyumlu.
 // Elle düzenleme yerine içeriği Data/content'te güncelleyip yeniden üretin.
 
-export type LT = { en: string; tr: string };
+// en zorunlu (fallback); tr/ru/ka/az opsiyonel (kademeli çeviri).
+// Çeviri yoksa lt() EN'e düşer — site 5 dilde çalışır, derin içerik çevrildikçe dolar.
+export type LT = {
+  en: string;
+  tr?: string;
+  ru?: string;
+  ka?: string;
+  az?: string;
+};
 export type ContentItem = { title: LT; body: LT };
 export type ContentSection = { heading: LT; intro?: LT; items: ContentItem[] };
 export type DepartmentContent = {

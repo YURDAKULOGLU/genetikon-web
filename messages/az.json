@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "home": {
+      "title": "Genetikon Genetics Center — tibbi genetika, hüceyrə terapiyası və IVF",
+      "description": "Batumidə (Gürcüstan) Genetikon Genetics Center: tibbi genetika laboratoriyası, hüceyrə terapiyası laboratoriyası və IVF mərkəzi. Məlumatlandırıcı yanaşma, xarici pasiyentlər üçün əlverişli."
+    }
+  },
+  "nav": {
+    "home": "Ana səhifə",
+    "departments": "Bölmələr",
+    "about": "Haqqımızda",
+    "information": "Məlumat Mərkəzi",
+    "internationalPatients": "Xarici pasiyentlər",
+    "contact": "Əlaqə"
+  },
+  "home": {
+    "heroKicker": "Genetika Mərkəzi — Hüceyrə Terapiyası Laboratoriyası",
+    "heroTitle": "Tibbi genetika, hüceyrə terapiyası və reproduktiv qayğı",
+    "heroSubtitle": "Batumidə (Gürcüstan) bir mərkəz altında üç ixtisaslaşmış laboratoriya — aydınlıq, sübut və diqqətli yönləndirmə axtaran pasiyentlər üçün.",
+    "heroCtaPrimary": "Məlumat istəyin",
+    "heroCtaSecondary": "Bölmələrə baxın",
+    "trustLine": "Məlumatlandırıcı məzmun · Pasiyent məxfiliyi · Beynəlxalq koordinasiya",
+    "departmentsHeading": "Bölmələrimiz",
+    "departmentsLede": "Bir mərkəz, üç ixtisaslaşmış laboratoriya — genetika, regenerativ tibb və reproduktiv qayğı vahid klinik standart altında.",
+    "internationalHeading": "Xarici pasiyentlər",
+    "internationalKicker": "Batumi · Gürcüstan",
+    "internationalBody": "Batumiyə çatmaq asandır. Səfərinizi planlaşdırmağa kömək edirik: çoxdilli koordinasiya, səyahət və yerləşmə dəstəyi.",
+    "contactHeading": "Bizimlə əlaqə",
+    "contactBody": "Nəyə ehtiyacınız olduğunu yazın, düzgün məlumatla cavab verək.",
+    "faqEyebrow": "Tez-tez verilən suallar",
+    "faqHeading": "Tez-tez verilən suallar",
+    "faqSupport": "Laboratoriyalarımız, beynəlxalq koordinasiya və gözləniləcəklər barədə aydın cavablar — reklam yox, məlumat.",
+    "faqContact": "Sualınız var? Bizimlə əlaqə saxlayın",
+    "trust": {
+      "labs": "Üç ixtisaslaşmış laboratoriya",
+      "center": "Bir mərkəz · Batumi, Gürcüstan",
+      "lang": "Çoxdilli xidmət · EN · TR · RU · KA · AZ",
+      "care": "Xarici pasiyentləri qəbul edirik",
+      "trustHeading": "Pasiyentlər niyə Genetikon-u seçir"
+    }
+  },
+  "departments": {
+    "medicalGenetics": {
+      "name": "Tibbi Genetika Laboratoriyası",
+      "summary": "Genetik məsləhət, skrininq və diaqnostik testlər, prenatal diaqnostika, NIPT və PGT.",
+      "cta": "Genetik testlər haqqında"
+    },
+    "stemCell": {
+      "name": "Hüceyrə Terapiyası Laboratoriyası",
+      "summary": "Regenerativ tibb — protokola əsaslanan, autoloji hüceyrə becərmə prosesləri və dürüst, ehtiyatlı məlumat.",
+      "cta": "Yanaşmamız haqqında"
+    },
+    "ivf": {
+      "name": "IVF Mərkəzi",
+      "summary": "IVF/ICSI, donorluq, surroqatlıq və PGD — xarici pasiyentlər üçün real, məlumatlandırıcı yönləndirmə ilə.",
+      "cta": "Reproduktiv qayğı haqqında"
+    }
+  },
+  "disclaimer": {
+    "medical": "Bu məzmun yalnız məlumatlandırma məqsədi daşıyır və tibbi məsləhəti əvəz etmir. Nəticələr pasiyentdən pasiyentə dəyişir. Hər hansı prosedurdan əvvəl həkiminizlə məsləhətləşin.",
+    "stemCell": "Tənzimləyici status və sübut səviyyəsi göstərişə görə dəyişir. Bəzi tətbiqlər tədqiqat mərhələsindədir; nəticələr zəmanətli deyil və pasiyentdən pasiyentə dəyişir."
+  },
+  "form": {
+    "title": "Məlumat istəyin",
+    "name": "Ad və soyad",
+    "contact": "E-poçt və ya telefon",
+    "message": "Mesajınız",
+    "messageHint": "Zəhmət olmasa, bu sahədə həssas sağlamlıq məlumatı qeyd etməyin.",
+    "consent": "Məxfilik bildirişini oxudum və müraciətimlə bağlı əlaqə saxlanılmasına razıyam.",
+    "submit": "Müraciəti göndər",
+    "mailtoNote": "Göndərmə e-poçt tətbiqinizi açır; müraciətiniz batumi@genetikon.com ünvanına gedir.",
+    "responseNote": "Adətən 1–2 iş günü ərzində cavab veririk.",
+    "errorRequired": "Zəhmət olmasa, ad, əlaqə və razılığı doldurun."
+  },
+  "footer": {
+    "rights": "Genetikon Genetics Center",
+    "editor": "Sayt redaktoru əlaqə: batumi@genetikon.com",
+    "lastUpdated": "Son yenilənmə",
+    "privacy": "Məxfilik bildirişi",
+    "cookies": "Kuki siyasəti",
+    "terms": "İstifadə şərtləri"
+  },
+  "cookie": {
+    "text": "Standart olaraq yalnız ciddi zəruri kukilərdən istifadə edirik. Analitik kukilər yalnız sizin razılığınızla yüklənir.",
+    "accept": "Analitikanı qəbul et",
+    "reject": "Yalnız zəruri",
+    "learnMore": "Kuki siyasəti"
+  },
+  "sticky": {
+    "whatsapp": "WhatsApp",
+    "call": "Zəng et",
+    "contact": "Əlaqə"
+  },
+  "a11y": {
+    "skipToContent": "Məzmuna keç"
+  }
+}
