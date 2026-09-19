@@ -46,3 +46,18 @@ npm run test:e2e
 ## Compliance (bağlayıcı — `../../Safety/SAFETY_POLICY.md`)
 - Kişi/ekip ismi yayınlanmaz. Yurtiçi fiyat/testimonial yok. Her tıbbi sayfa
   disclaimer. Randevu formu sağlık verisi istemez. Öncesi-sonrası görsel kapalı.
+
+## Native portfolio synchronization
+
+This repository is the authoritative website source. Edit and commit here; do
+not modify the Ajans compatibility snapshot or generated portfolio HTML.
+
+`npm run build:preview` generates `.next-preview/` for
+`https://yurdakul.net.tr/genetikon/` with noindex and a `preview-source.json`
+commit receipt. The host repository `YURDAKULOGLU/yurdakul-net-tr` consumes
+this repository as a pinned Git submodule. Its GitHub Actions workflow checks
+main every 15 minutes, validates new builds, advances the source revision, and
+the existing Cloudflare Builds integration publishes the host. GitHub can delay
+scheduled runs; use the host workflow's manual Run action for an immediate check.
+Only committed/pushed changes participate. Failed checks retain the last good
+revision. Preview builds do not change the production domain or email address.
