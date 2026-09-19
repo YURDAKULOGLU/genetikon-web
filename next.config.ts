@@ -5,15 +5,21 @@ import { fileURLToPath } from "node:url";
 
 const withNextIntl = createNextIntlPlugin("./src/lib/i18n/request.ts");
 const projectRoot = dirname(fileURLToPath(import.meta.url));
+const preview = process.env.GENETIKON_PREVIEW === "1";
 
 const nextConfig: NextConfig = {
   // Coolify Docker standalone deploy (WEBSITE_PRODUCTION_STANDARD §1).
-  output: "standalone",
+  output: preview ? "export" : "standalone",
+  basePath: preview ? "/genetikon" : "",
+  trailingSlash: preview,
+  distDir: preview ? ".next-preview" : ".next",
   turbopack: {
     root: projectRoot,
   },
   reactStrictMode: true,
   images: {
+    loader: preview ? "custom" : "default",
+    loaderFile: preview ? "./src/lib/preview-image-loader.ts" : undefined,
     // Performans gate (§4.2): AVIF-first, WebP fallback.
     formats: ["image/avif", "image/webp"],
     // Next 16: özel quality değerleri allowlist gerektirir (logo netliği q=90).

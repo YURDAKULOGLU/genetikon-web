@@ -49,6 +49,7 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "meta.home" });
   return {
+    robots: process.env.GENETIKON_PREVIEW === "1" ? { index: false, follow: false } : undefined,
     metadataBase: new URL(siteConfig.url),
     title: t("title"),
     description: t("description"),
@@ -151,7 +152,11 @@ export default async function LocaleLayout({
       <body className="flex min-h-screen flex-col">
         <NextIntlClientProvider>
           <SmoothScroll />
-          <OrganizationJsonLd />
+          {process.env.GENETIKON_PREVIEW === "1" ? (
+            <aside className="bg-slate-900 px-4 py-2 text-center text-sm text-white">
+              Genetikon — archive / site preview. The former centre is closed.
+            </aside>
+          ) : <OrganizationJsonLd />}
           <a
             href="#main"
             className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-white focus:px-4 focus:py-2 focus:text-brand-800"

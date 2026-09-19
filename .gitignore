@@ -1,6 +1,7 @@
 # dependencies & build output — runtime hygiene (repoya alinmaz)
 node_modules/
 .next/
+.next-preview/
 .env
 .env.local
 *.tsbuildinfo

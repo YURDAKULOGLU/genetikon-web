@@ -19,7 +19,7 @@ export function SiteHeader() {
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-2 px-4 py-3 sm:gap-6">
         <Link href="/" className="flex shrink-0 flex-col leading-none">
           <Image
-            src="/brand/wordmark-hd.png"
+            src={process.env.GENETIKON_PREVIEW === "1" ? "/genetikon/brand/wordmark-hd.png" : "/brand/wordmark-hd.png"}
             alt="Genetikon"
             width={644}
             height={89}

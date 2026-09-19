@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { siteConfig } from "@/site.config";
+export const dynamic = "force-static";
 
 // PWA manifest (Faz 5 launch: favicon/manifest seti).
 export default function manifest(): MetadataRoute.Manifest {
