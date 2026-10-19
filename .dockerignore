@@ -1,0 +1,14 @@
+.git
+.cache
+node_modules
+.next
+.next-preview
+.env
+.env.*
+!.env.example
+test-results
+playwright-report
+coverage
+*.tsbuildinfo
+npm-debug.log*
+factory

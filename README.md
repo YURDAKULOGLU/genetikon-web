@@ -1,5 +1,9 @@
 # genetikon.com
 
+Current production preparation and outstanding access/content decisions:
+[PRODUCTION.md](./PRODUCTION.md) (2026-10-19). Historical launch status below
+does not establish current clinic operation or a completed domain deployment.
+
 Genetikon Genetics Center kurumsal web sitesi. Ajans **website production
 harness**'inin ilk tüketicisi (`Core/standards/WEBSITE_PRODUCTION_STANDARD.md`).
 

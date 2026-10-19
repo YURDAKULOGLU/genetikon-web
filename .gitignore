@@ -1,5 +1,6 @@
 # dependencies & build output — runtime hygiene (repoya alinmaz)
 node_modules/
+.cache/
 .next/
 .next-preview/
 .env
