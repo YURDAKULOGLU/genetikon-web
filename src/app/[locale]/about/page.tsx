@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import { pagesContent } from "@/lib/content/site-content";
-import { lt } from "@/lib/content/localize";
+import { lt, textLocale } from "@/lib/content/localize";
 import { ContentSections } from "@/components/content-sections";
 import { ContactCta } from "@/components/contact-cta";
 import { PageHeader } from "@/components/page-header";
 import { siteConfig } from "@/site.config";
-import { localizedAlternates } from "@/lib/i18n/metadata";
+import { pageMetadata } from "@/lib/i18n/metadata";
 
 export async function generateMetadata({
   params,
@@ -15,11 +15,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const c = pagesContent["about"]!;
-  return {
-    title: `${lt(c.title, locale)} — ${siteConfig.name}`,
-    description: lt(c.intro, locale).slice(0, 155),
-    alternates: localizedAlternates("/about", locale),
-  };
+  return pageMetadata("/about", locale, `${lt(c.title, locale)} — ${siteConfig.name}`, lt(c.intro, locale).slice(0, 155));
 }
 
 export default async function AboutPage({
@@ -32,9 +28,9 @@ export default async function AboutPage({
   const c = pagesContent["about"]!;
   return (
     <>
-      <PageHeader image="/img/intl-2.jpg" eyebrow="Genetikon" title={lt(c.title, locale)} />
+      <PageHeader image="/img/intl-2.jpg" eyebrow="Genetikon" title={lt(c.title, locale)} titleLang={textLocale(c.title, locale)} />
       <div className="mx-auto max-w-4xl px-6 py-16 md:py-24">
-        <p className="measure text-lg leading-[1.6] text-ink-muted">{lt(c.intro, locale)}</p>
+        <p lang={textLocale(c.intro, locale)} className="measure text-lg leading-[1.6] text-ink-muted">{lt(c.intro, locale)}</p>
         <ContentSections sections={c.sections} locale={locale} />
         <div className="mt-14">
           <ContactCta />

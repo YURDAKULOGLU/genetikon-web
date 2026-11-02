@@ -77,6 +77,20 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+/* Keep anchor targets and browser validation focus below the sticky navigation. */
+html {
+  scroll-padding-top: 14rem;
+}
+
+:where(input, textarea, select, #main) {
+  scroll-margin-top: 14rem;
+}
+
+@media (min-width: 1024px) {
+  html { scroll-padding-top: 7rem; }
+  :where(input, textarea, select, #main) { scroll-margin-top: 7rem; }
+}
+
 /* Display serif: optik-boyut ekseni + editoryal sıkı tracking (otorite) */
 .font-serif {
   font-optical-sizing: auto;

@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/lib/i18n/navigation";
+import { CookieSettingsButton } from "./cookie-consent";
 import { siteConfig } from "@/site.config";
 
 /** Zorunlu künye: son güncelleme + editör iletişimi (Tanıtım Yön. m.5/1-ı). */
@@ -7,8 +8,8 @@ export function SiteFooter() {
   const t = useTranslations("footer");
   const tn = useTranslations("nav");
   const td = useTranslations("departments");
-  // Statik build tarihi (son güncelleme) — deploy'da güncellenir.
-  const lastUpdated = "2026-07-06";
+  // Content review date is not advanced automatically by a technical deployment.
+  const lastUpdated = siteConfig.contentReviewedAt;
 
   return (
     <footer className="border-t border-brand-100 bg-brand-900 text-brand-100">
@@ -43,6 +44,7 @@ export function SiteFooter() {
         <nav aria-label="Legal" className="flex flex-col items-start gap-1.5 text-sm">
           <Link href="/privacy" className="inline-flex min-h-[32px] items-center hover:text-white">{t("privacy")}</Link>
           <Link href="/cookie-policy" className="inline-flex min-h-[32px] items-center hover:text-white">{t("cookies")}</Link>
+          <CookieSettingsButton />
           <Link href="/terms" className="inline-flex min-h-[32px] items-center hover:text-white">{t("terms")}</Link>
         </nav>
       </div>

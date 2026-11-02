@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { siteConfig } from "@/site.config";
 import { ContactForm } from "@/components/contact-form";
-import { localizedAlternates } from "@/lib/i18n/metadata";
+import { pageMetadata } from "@/lib/i18n/metadata";
 
 export async function generateMetadata({
   params,
@@ -14,14 +14,9 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "form" });
   const path = "/contact";
-  return {
-    title: `${t("title")} — ${siteConfig.name}`,
-    description:
-      locale === "tr"
-        ? "Genetikon Genetics Center Batumi ile bilgi talebi, telefon, e-posta ve WhatsApp üzerinden iletişim."
-        : "Contact Genetikon Genetics Center in Batumi by information request, phone, email or WhatsApp.",
-    alternates: localizedAlternates(path, locale),
-  };
+  const home = await getTranslations({ locale, namespace: "home" });
+  const description = home("contactBody");
+  return pageMetadata(path, locale, `${t("title")} — ${siteConfig.name}`, description);
 }
 
 export default function ContactPage({

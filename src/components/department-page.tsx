@@ -8,9 +8,9 @@ const DEPT_HERO: Record<string, string> = {
   "stem-cell-therapy": "/img/stemcell-2.jpg",
   "ivf-center": "/img/ivf-1.jpg",
 };
-import { lt } from "@/lib/content/localize";
+import { lt, textLocale } from "@/lib/content/localize";
 import { localizedPath } from "@/lib/i18n/metadata";
-import { siteConfig } from "@/site.config";
+import { siteUrl, absoluteSiteUrl } from "@/lib/site-environment";
 import { MedicalDisclaimer } from "./medical-disclaimer";
 import { DepartmentSwitcher } from "./department-switcher";
 import { ContactCta } from "./contact-cta";
@@ -27,20 +27,20 @@ function DepartmentJsonLd({
   locale: string;
 }) {
   const path = `/departments/${slug}`;
-  const url = `${siteConfig.url}${localizedPath(locale, path)}`;
+  const url = absoluteSiteUrl(localizedPath(locale, path));
   const data = {
     "@context": "https://schema.org",
     "@type": "MedicalWebPage",
     name: title,
     description: description.slice(0, 300),
-    inLanguage: locale,
+    inLanguage: locale === "tr" ? "tr" : "en",
     url,
-    isPartOf: { "@id": `${siteConfig.url}#organization` },
-    about: { "@type": "MedicalBusiness", name: siteConfig.name },
+    isPartOf: { "@id": `${siteUrl}#website` },
+    publisher: { "@id": `${siteUrl}#organization` },
     breadcrumb: {
       "@type": "BreadcrumbList",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: siteConfig.url },
+        { "@type": "ListItem", position: 1, name: "Home", item: absoluteSiteUrl(localizedPath(locale)) },
         { "@type": "ListItem", position: 2, name: title, item: url },
       ],
     },
@@ -69,7 +69,7 @@ export async function DepartmentPage({
   if (!content) notFound();
 
   return (
-    <article>
+    <article lang={textLocale(content.title, locale)}>
       <DepartmentJsonLd
         slug={slug}
         title={lt(content.title, locale)}
@@ -95,14 +95,14 @@ export async function DepartmentPage({
         </div>
       </div>
 
-      <DepartmentSwitcher current={slug} />
+      <div lang={locale}><DepartmentSwitcher current={slug} /></div>
 
       <div className="mx-auto max-w-4xl px-6 py-16 md:py-24">
         <p className="measure text-lg leading-[1.6] text-ink-muted">{lt(content.intro, locale)}</p>
 
       {content.disclaimer === "stemCell" && (
         <div className="mt-6">
-          <MedicalDisclaimer variant="stemCell" />
+          <div lang={locale}><MedicalDisclaimer variant="stemCell" /></div>
         </div>
       )}
 
@@ -134,11 +134,11 @@ export async function DepartmentPage({
 
       {/* Trust-then-CTA */}
       <div className="mt-14">
-        <ContactCta />
+        <div lang={locale}><ContactCta /></div>
       </div>
 
       <div className="mt-10">
-        <MedicalDisclaimer variant={content.disclaimer} />
+        <div lang={locale}><MedicalDisclaimer variant={content.disclaimer} /></div>
       </div>
       </div>
     </article>

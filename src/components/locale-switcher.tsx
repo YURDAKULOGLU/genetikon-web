@@ -1,14 +1,14 @@
 "use client";
 
 import { useLocale } from "next-intl";
-import { usePathname, useRouter } from "@/lib/i18n/navigation";
+import { usePathname } from "@/lib/i18n/navigation";
 import { routing } from "@/lib/i18n/routing";
 
 /** Kalıcı dil seçici (medical trust §5.2 bilingual-parity gate). */
-export function LocaleSwitcher() {
+export function LocaleSwitcher({ basePath = "" }: { basePath?: string }) {
   const locale = useLocale();
   const pathname = usePathname();
-  const router = useRouter();
+  const pagePath = pathname.replace(/\/+$/, "");
 
   return (
     <div
@@ -17,11 +17,10 @@ export function LocaleSwitcher() {
       aria-label="Language"
     >
       {routing.locales.map((loc) => (
-        <button
+        <a
           key={loc}
-          type="button"
           aria-current={loc === locale ? "true" : undefined}
-          onClick={() => router.replace(pathname, { locale: loc })}
+          href={`${basePath}/${loc}${pagePath}${basePath ? "/" : ""}`}
           className={
             "inline-flex min-h-[30px] min-w-[40px] items-center justify-center rounded-full px-3 transition-colors " +
             (loc === locale
@@ -30,7 +29,7 @@ export function LocaleSwitcher() {
           }
         >
           {loc.toUpperCase()}
-        </button>
+        </a>
       ))}
     </div>
   );

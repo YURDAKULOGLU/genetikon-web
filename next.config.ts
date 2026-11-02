@@ -18,6 +18,9 @@ const nextConfig: NextConfig = {
   },
   reactStrictMode: true,
   images: {
+    // Static preview variants are prepared by scripts/prepare-preview-images.mjs.
+    deviceSizes: preview ? [640, 750, 828, 1080, 1200, 1400, 1920, 2000] : undefined,
+    imageSizes: preview ? [32, 48, 64, 96, 128, 256, 384] : undefined,
     loader: preview ? "custom" : "default",
     loaderFile: preview ? "./src/lib/preview-image-loader.ts" : undefined,
     // Performans gate (§4.2): AVIF-first, WebP fallback.

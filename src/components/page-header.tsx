@@ -8,10 +8,12 @@ export function PageHeader({
   image,
   eyebrow,
   title,
+  titleLang,
 }: {
   image: string;
   eyebrow?: string;
   title: string;
+  titleLang?: string;
 }) {
   return (
     <div className="relative flex min-h-[38vh] items-end overflow-hidden bg-brand-900 text-white">
@@ -26,7 +28,7 @@ export function PageHeader({
             {eyebrow}
           </p>
         )}
-        <h1 className="mt-4 max-w-2xl font-serif text-4xl leading-[1.08] tracking-[-0.015em] md:text-5xl">
+        <h1 lang={titleLang} className="mt-4 max-w-2xl font-serif text-4xl leading-[1.08] tracking-[-0.015em] md:text-5xl">
           {title}
         </h1>
       </div>

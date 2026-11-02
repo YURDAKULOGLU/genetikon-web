@@ -1,19 +1,19 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { setRequestLocale } from "next-intl/server";
+import { setRequestLocale, getTranslations } from "next-intl/server";
 import { pagesContent } from "@/lib/content/site-content";
-import { lt } from "@/lib/content/localize";
+import { lt, textLocale } from "@/lib/content/localize";
 import { ContentSections } from "@/components/content-sections";
 import { PageHeader } from "@/components/page-header";
 import { Link } from "@/lib/i18n/navigation";
 import { MedicalDisclaimer } from "@/components/medical-disclaimer";
 import { siteConfig } from "@/site.config";
-import { localizedAlternates } from "@/lib/i18n/metadata";
+import { pageMetadata } from "@/lib/i18n/metadata";
 
 const DEPTS = [
-  { slug: "medical-genetics", img: "/img/genetics-1.jpg", name: "Medical Genetics" },
-  { slug: "stem-cell-therapy", img: "/img/stemcell-1.jpg", name: "Stem Cell Therapy" },
-  { slug: "ivf-center", img: "/img/ivf-1.jpg", name: "IVF Center" },
+  { slug: "medical-genetics", img: "/img/genetics-1.jpg", key: "medicalGenetics" },
+  { slug: "stem-cell-therapy", img: "/img/stemcell-1.jpg", key: "stemCell" },
+  { slug: "ivf-center", img: "/img/ivf-1.jpg", key: "ivf" },
 ];
 
 export async function generateMetadata({
@@ -23,11 +23,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const c = pagesContent["information"]!;
-  return {
-    title: `${lt(c.title, locale)} — ${siteConfig.name}`,
-    description: lt(c.intro, locale).slice(0, 155),
-    alternates: localizedAlternates("/information", locale),
-  };
+  return pageMetadata("/information", locale, `${lt(c.title, locale)} — ${siteConfig.name}`, lt(c.intro, locale).slice(0, 155));
 }
 
 export default async function InformationPage({
@@ -37,12 +33,13 @@ export default async function InformationPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const td = await getTranslations({ locale, namespace: "departments" });
   const c = pagesContent["information"]!;
   return (
     <>
-      <PageHeader image="/img/labtech-1.jpg" eyebrow="Genetikon" title={lt(c.title, locale)} />
+      <PageHeader image="/img/labtech-1.jpg" eyebrow="Genetikon" title={lt(c.title, locale)} titleLang={textLocale(c.title, locale)} />
       <div className="mx-auto max-w-4xl px-6 py-16 md:py-24">
-        <p className="measure text-lg leading-[1.6] text-ink-muted">{lt(c.intro, locale)}</p>
+        <p lang={textLocale(c.intro, locale)} className="measure text-lg leading-[1.6] text-ink-muted">{lt(c.intro, locale)}</p>
         <ContentSections sections={c.sections} locale={locale} />
 
         <div className="mt-12 grid gap-6 sm:grid-cols-3">
@@ -53,11 +50,11 @@ export default async function InformationPage({
               className="group relative overflow-hidden rounded-[var(--radius-card)]"
             >
               <div className="relative aspect-[4/3]">
-                <Image src={d.img} alt={d.name} fill sizes="33vw" className="object-cover transition-transform duration-500 group-hover:scale-105" />
+                <Image src={d.img} alt="" fill sizes="33vw" className="object-cover transition-transform duration-500 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-brand-900/85 to-brand-900/20" aria-hidden />
               </div>
               <span className="absolute bottom-4 left-4 font-serif text-lg text-white">
-                {d.name} →
+                {td(`${d.key}.name`)} →
               </span>
             </Link>
           ))}

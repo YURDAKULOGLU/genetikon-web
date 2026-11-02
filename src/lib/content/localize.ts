@@ -8,3 +8,8 @@ import type { LT } from "./site-content";
 export function lt(value: LT, locale: string): string {
   return (value as Record<string, string | undefined>)[locale] ?? value.en;
 }
+
+/** Language of the actual text, including untranslated English fallback. */
+export function textLocale(value: LT, locale: string): string {
+  return (value as Record<string, string | undefined>)[locale] ? locale : "en";
+}

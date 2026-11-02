@@ -10,6 +10,7 @@ export const siteConfig = {
   domain: "genetikon.com",
   url: "https://www.genetikon.com",
   defaultLocale: "en",
+  contentReviewedAt: "2026-07-06",
   // Batumi/Gürcistan tıbbi turizm hattı: EN (default) + TR + RU + KA (Gürcüce)
   // + AZ (Azerice). Dil, ziyaretçi ülkesine (edge geo) + Accept-Language'a göre
   // otomatik seçilir (bkz. proxy.ts).

@@ -6,6 +6,7 @@ const baseURL = process.env.BASE_URL ?? `http://127.0.0.1:${port}`;
 export default defineConfig({
   testDir: "./tests",
   testMatch: "**/*.e2e.ts",
+  testIgnore: "**/preview-navigation.e2e.ts",
   timeout: 30_000,
   expect: { timeout: 5_000 },
   use: {
@@ -16,6 +17,7 @@ export default defineConfig({
     command: "npm run build && npm run start:standalone",
     url: `${baseURL}/tr`,
     env: {
+      GENETIKON_PUBLIC_RELEASE: "1",
       PORT: String(port),
       HOSTNAME: "127.0.0.1",
     },

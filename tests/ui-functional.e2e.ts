@@ -75,13 +75,13 @@ test.describe("UI/UX and functional production surface", () => {
 
     await page.goto("/en/about", { waitUntil: "networkidle" });
     const localeSwitcher = page.getByRole("group", { name: "Language" });
-    await expect(localeSwitcher.getByRole("button")).toHaveCount(routing.locales.length);
+    await expect(localeSwitcher.getByRole("link")).toHaveCount(routing.locales.length);
 
-    await page.getByRole("button", { name: "TR" }).click();
+    await page.getByRole("link", { name: "TR", exact: true }).click();
     await expect(page).toHaveURL(/\/tr\/about$/);
-    await page.getByRole("button", { name: "RU" }).click();
+    await page.getByRole("link", { name: "RU", exact: true }).click();
     await expect(page).toHaveURL(/\/ru\/about$/);
-    await page.getByRole("button", { name: "EN" }).click();
+    await page.getByRole("link", { name: "EN", exact: true }).click();
     await expect(page).toHaveURL(/\/en\/about$/);
   });
 
@@ -129,7 +129,7 @@ test.describe("UI/UX and functional production surface", () => {
       "href",
       "https://www.genetikon.com/en/about",
     );
-    for (const loc of routing.locales) {
+    for (const loc of ["en", "tr"]) {
       await expect(page.locator(`link[hreflang="${loc}"]`)).toHaveAttribute(
         "href",
         `https://www.genetikon.com/${loc}/about`,
@@ -145,7 +145,7 @@ test.describe("UI/UX and functional production surface", () => {
     const sitemap = await request.get("/sitemap.xml");
     expect(sitemap.ok()).toBe(true);
     const sitemapXml = await sitemap.text();
-    for (const loc of routing.locales) {
+    for (const loc of ["en", "tr"]) {
       expect(sitemapXml).toContain(`https://www.genetikon.com/${loc}/about`);
     }
     expect(sitemapXml).not.toContain("<loc>https://www.genetikon.com/about</loc>");

@@ -2,8 +2,10 @@ import { spawnSync, execFileSync } from "node:child_process";
 import { readdirSync, existsSync, copyFileSync, writeFileSync } from "node:fs";
 import { resolve, dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { preparePreviewImages } from "./prepare-preview-images.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
+await preparePreviewImages(root);
 const result = spawnSync(process.execPath, ["node_modules/next/dist/bin/next", "build", "--webpack"], {
   cwd: root, stdio: "inherit", env: { ...process.env, GENETIKON_PREVIEW: "1" },
 });
@@ -24,7 +26,7 @@ function walk(directory) {
   }
 }
 walk(output);
-writeFileSync(join(output, "index.html"), '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex, nofollow"><meta http-equiv="refresh" content="0;url=/genetikon/en/"><title>Genetikon site preview</title></head><body><a href="/genetikon/en/">Genetikon site preview</a></body></html>\n');
+writeFileSync(join(output, "index.html"), '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex, nofollow"><meta http-equiv="refresh" content="0;url=/genetikon/en/"><title>Genetikon</title></head><body><a href="/genetikon/en/">Genetikon</a></body></html>\n');
 writeFileSync(join(output, "preview-source.json"), JSON.stringify({
   repository: "YURDAKULOGLU/genetikon-web",
   commit: execFileSync("git", ["rev-parse", "HEAD"], { cwd: root, encoding: "utf8" }).trim(),

@@ -12,7 +12,7 @@ const navItems = [
   { href: "/contact", key: "contact" },
 ] as const;
 
-export function SiteHeader() {
+export function SiteHeader({ basePath = "" }: { basePath?: string }) {
   const t = useTranslations("nav");
   return (
     <header className="sticky top-0 z-40 border-b border-brand-100 bg-white/90 backdrop-blur">
@@ -49,7 +49,7 @@ export function SiteHeader() {
         </nav>
         {/* Masaüstünde switcher üst satırda; mobilde alttaki nav satırına taşınır (5 pill sığsın). */}
         <div className="hidden shrink-0 lg:block">
-          <LocaleSwitcher />
+          <LocaleSwitcher basePath={basePath} />
         </div>
       </div>
       <nav
@@ -68,7 +68,7 @@ export function SiteHeader() {
           </NavLink>
         ))}
         <div className="ml-auto">
-          <LocaleSwitcher />
+          <LocaleSwitcher basePath={basePath} />
         </div>
       </nav>
     </header>

@@ -1,7 +1,8 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { useRef, useState } from "react";
+import { useState } from "react";
+import { Link } from "@/lib/i18n/navigation";
 import { siteConfig } from "@/site.config";
 import { btn } from "@/lib/ui/button";
 
@@ -13,8 +14,8 @@ import { btn } from "@/lib/ui/button";
  */
 export function ContactForm() {
   const t = useTranslations("form");
+  const legal = useTranslations("footer");
   const [error, setError] = useState<string | null>(null);
-  const formRef = useRef<HTMLFormElement>(null);
 
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -37,7 +38,7 @@ export function ContactForm() {
   }
 
   return (
-    <form ref={formRef} className="mt-8 max-w-xl space-y-5" onSubmit={handleSubmit}>
+    <form className="mt-8 max-w-xl space-y-5" onSubmit={handleSubmit} aria-describedby="contact-mailto-note">
       <div>
         <label htmlFor="name" className="mb-1.5 block text-sm font-medium text-ink-muted">
           {t("name")}
@@ -69,9 +70,10 @@ export function ContactForm() {
           id="message"
           name="message"
           rows={4}
+          aria-describedby="contact-message-hint"
           className="mt-1.5 w-full rounded-[var(--radius-control)] border border-divider bg-white px-4 py-3 transition-colors focus:border-brand-500"
         />
-        <p className="mt-1 text-xs text-ink-muted">{t("messageHint")}</p>
+        <p id="contact-message-hint" className="mt-1 text-xs text-ink-muted">{t("messageHint")}</p>
       </div>
       <label className="flex items-start gap-3 text-sm leading-relaxed text-ink-muted">
         <input
@@ -82,15 +84,16 @@ export function ContactForm() {
         />
         <span>{t("consent")}</span>
       </label>
+      <Link href="/privacy" className="inline-flex text-sm text-brand-700 underline">{legal("privacy")}</Link>
       {error && (
         <p role="alert" className="text-sm text-error">
           {error}
         </p>
       )}
-      <button type="submit" className={btn("primary", "md")}>
+      <p id="contact-mailto-note" className="text-xs text-ink-muted">{t("mailtoNote")}</p>
+      <button type="submit" className={btn("primary", "md")} aria-describedby="contact-mailto-note">
         {t("submit")}
       </button>
-      <p className="text-xs text-ink-muted">{t("mailtoNote")}</p>
       <p className="text-xs text-ink-muted">{t("responseNote")}</p>
     </form>
   );
