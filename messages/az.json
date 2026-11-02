@@ -1,8 +1,8 @@
 {
   "meta": {
     "home": {
-      "title": "Genetikon Genetics Center — tibbi genetika, hüceyrə terapiyası və IVF",
-      "description": "Batumidə (Gürcüstan) Genetikon Genetics Center: tibbi genetika laboratoriyası, hüceyrə terapiyası laboratoriyası və IVF mərkəzi. Məlumatlandırıcı yanaşma, xarici pasiyentlər üçün əlverişli."
+      "title": "Genetikon Genetics Center — tibbi genetika, kök hüceyrə terapiyası və IVF",
+      "description": "Batumidə (Gürcüstan) Genetikon Genetics Center: tibbi genetika laboratoriyası, kök hüceyrə terapiyası laboratoriyası və IVF mərkəzi. Məlumatlandırıcı yanaşma, xarici pasiyentlər üçün əlverişli."
     }
   },
   "nav": {
@@ -14,8 +14,8 @@
     "contact": "Əlaqə"
   },
   "home": {
-    "heroKicker": "Genetika Mərkəzi — Hüceyrə Terapiyası Laboratoriyası",
-    "heroTitle": "Tibbi genetika, hüceyrə terapiyası və reproduktiv qayğı",
+    "heroKicker": "Genetika Mərkəzi — Kök Hüceyrə Terapiyası Laboratoriyası",
+    "heroTitle": "Tibbi genetika, kök hüceyrə terapiyası və reproduktiv qayğı",
     "heroSubtitle": "Batumidə (Gürcüstan) bir mərkəz altında üç ixtisaslaşmış laboratoriya. İlk sualınızdan nəticələrinizə qədər yanınızdayıq — aydınlıq, sübut və diqqətli yönləndirmə ilə.",
     "heroCtaPrimary": "Məlumat istəyin",
     "heroCtaSecondary": "Bölmələrə baxın",
@@ -46,7 +46,7 @@
       "cta": "Genetik testlər haqqında"
     },
     "stemCell": {
-      "name": "Hüceyrə Terapiyası Laboratoriyası",
+      "name": "Kök Hüceyrə Terapiyası Laboratoriyası",
       "summary": "Regenerativ tibb — protokola əsaslanan, autoloji hüceyrə becərmə prosesləri və dürüst, ehtiyatlı məlumat.",
       "cta": "Yanaşmamız haqqında"
     },
@@ -84,7 +84,8 @@
     "text": "Standart olaraq yalnız ciddi zəruri kukilərdən istifadə edirik. Analitik kukilər yalnız sizin razılığınızla yüklənir.",
     "accept": "Analitikanı qəbul et",
     "reject": "Yalnız zəruri",
-    "learnMore": "Kuki siyasəti"
+    "learnMore": "Kuki siyasəti",
+    "settings": "Kuki parametrləri"
   },
   "sticky": {
     "whatsapp": "WhatsApp",
@@ -92,6 +93,14 @@
     "contact": "Əlaqə"
   },
   "a11y": {
-    "skipToContent": "Məzmuna keç"
+    "skipToContent": "Məzmuna keç",
+    "language": "Dil",
+    "primaryNavigation": "Əsas naviqasiya",
+    "mobileNavigation": "Mobil naviqasiya",
+    "legalNavigation": "Hüquqi məlumatlar",
+    "cookieConsent": "Kuki razılığı"
+  },
+  "common": {
+    "brandLine": "Genetika Mərkəzi · Kök Hüceyrə Terapiyası Laboratoriyası"
   }
 }

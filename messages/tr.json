@@ -14,7 +14,7 @@
     "contact": "İletişim"
   },
   "home": {
-    "heroKicker": "Genetics Center — Stem Cell Therapy Laboratory",
+    "heroKicker": "Genetik Merkezi — Kök Hücre Tedavi Laboratuvarı",
     "heroTitle": "Tıbbi genetik, kök hücre tedavisi ve üreme sağlığı",
     "heroSubtitle": "Batum, Gürcistan'da tek merkezde üç uzman laboratuvar. İlk sorunuzdan sonuçlarınıza kadar yanınızdayız — netlik, kanıt ve dikkatli yönlendirmeyle.",
     "heroCtaPrimary": "Bilgi talep edin",
@@ -84,7 +84,8 @@
     "text": "Varsayılan olarak yalnızca zorunlu çerezleri kullanırız. Analitik çerezler yalnızca rızanızla yüklenir.",
     "accept": "Analitiği kabul et",
     "reject": "Sadece zorunlu",
-    "learnMore": "Çerez Politikası"
+    "learnMore": "Çerez Politikası",
+    "settings": "Çerez tercihleri"
   },
   "sticky": {
     "whatsapp": "WhatsApp",
@@ -92,6 +93,14 @@
     "contact": "İletişim"
   },
   "a11y": {
-    "skipToContent": "İçeriğe geç"
+    "skipToContent": "İçeriğe geç",
+    "language": "Dil",
+    "primaryNavigation": "Ana gezinme",
+    "mobileNavigation": "Mobil gezinme",
+    "legalNavigation": "Yasal bilgiler",
+    "cookieConsent": "Çerez tercihleri"
+  },
+  "common": {
+    "brandLine": "Genetik Merkezi · Kök Hücre Tedavi Laboratuvarı"
   }
 }

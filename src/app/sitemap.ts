@@ -1,5 +1,6 @@
+import { siteConfig } from "@/site.config";
 import type { MetadataRoute } from "next";
-import { localizedAlternates, localizedPath, translatedLocalesForPath } from "@/lib/i18n/metadata";
+import { localizedAlternates, localizedPath } from "@/lib/i18n/metadata";
 import { absoluteSiteUrl, isIndexable } from "@/lib/site-environment";
 export const dynamic = "force-static";
 
@@ -21,7 +22,7 @@ const ROUTES = [
 export default function sitemap(): MetadataRoute.Sitemap {
   if (!isIndexable) return [];
   return ROUTES.flatMap((route) =>
-    translatedLocalesForPath(route).map((locale) => ({
+    siteConfig.locales.map((locale) => ({
       url: absoluteSiteUrl(localizedPath(locale, route || "/")),
       alternates: {
         languages: localizedAlternates(route, locale).languages,

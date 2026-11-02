@@ -84,7 +84,8 @@
     "text": "We use only strictly necessary cookies by default. Analytics cookies load only with your consent.",
     "accept": "Accept analytics",
     "reject": "Necessary only",
-    "learnMore": "Cookie Policy"
+    "learnMore": "Cookie Policy",
+    "settings": "Cookie settings"
   },
   "sticky": {
     "whatsapp": "WhatsApp",
@@ -92,6 +93,14 @@
     "contact": "Contact us"
   },
   "a11y": {
-    "skipToContent": "Skip to content"
+    "skipToContent": "Skip to content",
+    "language": "Language",
+    "primaryNavigation": "Primary",
+    "mobileNavigation": "Primary mobile",
+    "legalNavigation": "Legal",
+    "cookieConsent": "Cookie consent"
+  },
+  "common": {
+    "brandLine": "Genetics Center · Stem Cell Therapy Laboratory"
   }
 }

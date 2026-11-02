@@ -38,14 +38,11 @@ describe("deployment-aware metadata", () => {
     });
   });
 
-  it("does not advertise English fallback bodies as translated alternatives", async () => {
-    const { pageMetadata, translatedLocalesForPath, contentLocaleForPath } = await metadataFor(false, true);
-    expect(translatedLocalesForPath("/contact")).toEqual(["en", "tr", "ru", "ka", "az"]);
-    expect(translatedLocalesForPath("/departments/ivf-center")).toEqual(["en", "tr"]);
-    expect(contentLocaleForPath("az", "/about")).toBe("en");
+  it("advertises complete translated routes with matching locale metadata", async () => {
+    const { pageMetadata } = await metadataFor(false, true);
     const metadata = pageMetadata("/about", "az", "Title", "Description");
-    expect(metadata.robots).toEqual({ index: false, follow: true });
-    expect(Object.keys(metadata.alternates?.languages ?? {})).toEqual(["en", "tr"]);
-    expect(metadata.openGraph).toMatchObject({ locale: "en_US" });
+    expect(metadata.robots).toEqual({ index: true, follow: true });
+    expect(Object.keys(metadata.alternates?.languages ?? {})).toEqual(["en", "tr", "ru", "ka", "az"]);
+    expect(metadata.openGraph).toMatchObject({ locale: "az_AZ" });
   });
 });

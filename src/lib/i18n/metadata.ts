@@ -2,18 +2,7 @@ import type { Metadata } from "next";
 import { siteConfig } from "../../site.config";
 import { absoluteSiteUrl, isIndexable, isPreview, siteOrigin } from "../site-environment";
 
-// Deep content is only supplied in EN/TR. Do not claim missing translations
-// as hreflang equivalents or submit their English fallback pages for indexing.
-export function translatedLocalesForPath(path = "/"): readonly string[] {
-  return ["", "/", "/contact", "/contact/"].includes(path)
-    ? siteConfig.locales
-    : ["en", "tr"];
-}
-
-export function contentLocaleForPath(locale: string, path = "/") {
-  return translatedLocalesForPath(path).includes(locale) ? locale : "en";
-}
-
+// All supported routes have complete translations; clinical release approval is separate.
 export function localizedPath(locale: string, path = "/") {
   const normalizedPath = path === "/" ? "" : path.startsWith("/") ? path : `/${path}`;
   const route = `/${locale}${normalizedPath}`.replace(/\/$/, "");
@@ -24,7 +13,7 @@ export function localizedAlternates(path = "/", currentLocale: string) {
   return {
     canonical: absoluteSiteUrl(localizedPath(currentLocale, path)),
     languages: Object.fromEntries(
-      translatedLocalesForPath(path).map((locale) => [
+      siteConfig.locales.map((locale) => [
         locale,
         absoluteSiteUrl(localizedPath(locale, path)),
       ]),
@@ -42,7 +31,7 @@ export function pageMetadata(
   title: string,
   description: string,
 ): Metadata {
-  const contentLocale = contentLocaleForPath(locale, path);
+  const contentLocale = siteConfig.locales.includes(locale as (typeof siteConfig.locales)[number]) ? locale : "en";
   const canIndex = isIndexable && contentLocale === locale;
   const images = [{
     url: absoluteSiteUrl("/brand/wordmark.png"),
@@ -63,7 +52,7 @@ export function pageMetadata(
       siteName: siteConfig.name,
       type: "website",
       locale: ogLocales[contentLocale],
-      alternateLocale: translatedLocalesForPath(path)
+      alternateLocale: siteConfig.locales
         .filter((value) => value !== contentLocale)
         .map((value) => ogLocales[value]!),
       images,

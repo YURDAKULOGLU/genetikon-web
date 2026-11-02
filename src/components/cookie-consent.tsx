@@ -47,9 +47,10 @@ function saveChoice(value: "accepted" | "necessary" | "unset") {
 }
 
 export function CookieSettingsButton() {
+  const t = useTranslations("cookie");
   return (
-    <button type="button" lang="en" onClick={() => saveChoice("unset")} className="inline-flex min-h-[32px] items-center text-sm underline hover:text-white" aria-controls="cookie-consent">
-      Cookie settings
+    <button type="button" onClick={() => saveChoice("unset")} className="inline-flex min-h-[32px] items-center text-sm underline hover:text-white" aria-controls="cookie-consent">
+      {t("settings")}
     </button>
   );
 }
@@ -62,6 +63,7 @@ export function CookieSettingsButton() {
  */
 export function CookieConsent() {
   const t = useTranslations("cookie");
+  const a11y = useTranslations("a11y");
   const consent = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
 
   function choose(value: "accepted" | "necessary") {
@@ -74,7 +76,7 @@ export function CookieConsent() {
     <div
       id="cookie-consent"
       role="dialog"
-      aria-label="Cookie consent"
+      aria-label={a11y("cookieConsent")}
       className="fixed inset-x-0 bottom-0 z-50 border-t border-brand-200 bg-white/95 backdrop-blur"
     >
       <div className="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-4 sm:flex-row sm:items-center sm:justify-between">

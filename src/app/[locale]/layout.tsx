@@ -5,7 +5,7 @@ import { setRequestLocale, getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/lib/i18n/routing";
 import { pageMetadata } from "@/lib/i18n/metadata";
-import { siteUrl, siteBasePath } from "@/lib/site-environment";
+import { siteUrl } from "@/lib/site-environment";
 import { siteConfig, type Locale } from "@/site.config";
 import { getTranslations as getT } from "next-intl/server";
 import { SiteHeader } from "@/components/site-header";
@@ -89,7 +89,7 @@ export default async function LocaleLayout({
           >
             {t("skipToContent")}
           </a>
-          <SiteHeader basePath={siteBasePath} />
+          <SiteHeader />
           <main id="main" className="flex-1">
             {children}
           </main>

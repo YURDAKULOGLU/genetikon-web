@@ -12,12 +12,14 @@ const navItems = [
   { href: "/contact", key: "contact" },
 ] as const;
 
-export function SiteHeader({ basePath = "" }: { basePath?: string }) {
+export function SiteHeader() {
   const t = useTranslations("nav");
+  const common = useTranslations("common");
+  const a11y = useTranslations("a11y");
   return (
     <header className="sticky top-0 z-40 border-b border-brand-100 bg-white/90 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-2 px-4 py-3 sm:gap-6">
-        <Link href="/" className="flex shrink-0 flex-col leading-none">
+        <Link href="/" className="flex shrink-0 flex-col leading-none sm:max-w-[20rem]">
           <Image
             src={process.env.GENETIKON_PREVIEW === "1" ? "/genetikon/brand/wordmark-hd.png" : "/brand/wordmark-hd.png"}
             alt="Genetikon"
@@ -27,12 +29,12 @@ export function SiteHeader({ basePath = "" }: { basePath?: string }) {
             unoptimized
             className="h-7 w-auto self-start object-contain sm:h-10"
           />
-          <span className="mt-1.5 hidden text-[0.66rem] uppercase tracking-[0.08em] text-ink-soft sm:block">
-            Genetics Center · Stem Cell Therapy Laboratory
+          <span className="mt-1.5 hidden text-[0.66rem] uppercase tracking-[0.08em] text-ink-soft sm:block sm:leading-relaxed">
+            {common("brandLine")}
           </span>
         </Link>
         <nav
-          aria-label="Primary"
+          aria-label={a11y("primaryNavigation")}
           className="hidden items-center gap-6 text-sm font-medium text-brand-900 lg:flex"
         >
           {navItems.map((item) => (
@@ -49,11 +51,11 @@ export function SiteHeader({ basePath = "" }: { basePath?: string }) {
         </nav>
         {/* Masaüstünde switcher üst satırda; mobilde alttaki nav satırına taşınır (5 pill sığsın). */}
         <div className="hidden shrink-0 lg:block">
-          <LocaleSwitcher basePath={basePath} />
+          <LocaleSwitcher />
         </div>
       </div>
       <nav
-        aria-label="Primary mobile"
+        aria-label={a11y("mobileNavigation")}
         className="mx-auto flex max-w-6xl flex-wrap items-center gap-x-2 gap-y-2 border-t border-brand-100 px-4 py-2 text-sm font-medium text-brand-900 lg:hidden"
       >
         {navItems.map((item) => (
@@ -68,7 +70,7 @@ export function SiteHeader({ basePath = "" }: { basePath?: string }) {
           </NavLink>
         ))}
         <div className="ml-auto">
-          <LocaleSwitcher basePath={basePath} />
+          <LocaleSwitcher />
         </div>
       </nav>
     </header>

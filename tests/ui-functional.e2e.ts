@@ -129,7 +129,7 @@ test.describe("UI/UX and functional production surface", () => {
       "href",
       "https://www.genetikon.com/en/about",
     );
-    for (const loc of ["en", "tr"]) {
+    for (const loc of routing.locales) {
       await expect(page.locator(`link[hreflang="${loc}"]`)).toHaveAttribute(
         "href",
         `https://www.genetikon.com/${loc}/about`,
@@ -145,7 +145,7 @@ test.describe("UI/UX and functional production surface", () => {
     const sitemap = await request.get("/sitemap.xml");
     expect(sitemap.ok()).toBe(true);
     const sitemapXml = await sitemap.text();
-    for (const loc of ["en", "tr"]) {
+    for (const loc of routing.locales) {
       expect(sitemapXml).toContain(`https://www.genetikon.com/${loc}/about`);
     }
     expect(sitemapXml).not.toContain("<loc>https://www.genetikon.com/about</loc>");

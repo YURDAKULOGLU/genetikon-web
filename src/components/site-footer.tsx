@@ -6,6 +6,8 @@ import { siteConfig } from "@/site.config";
 /** Zorunlu künye: son güncelleme + editör iletişimi (Tanıtım Yön. m.5/1-ı). */
 export function SiteFooter() {
   const t = useTranslations("footer");
+  const common = useTranslations("common");
+  const a11y = useTranslations("a11y");
   const tn = useTranslations("nav");
   const td = useTranslations("departments");
   // Content review date is not advanced automatically by a technical deployment.
@@ -16,7 +18,7 @@ export function SiteFooter() {
       <div className="mx-auto grid max-w-6xl gap-8 px-4 py-12 sm:grid-cols-2 md:grid-cols-4">
         <div>
           <p className="font-serif text-lg text-white">Genetikon Genetics Center</p>
-          <p className="mt-2 text-sm">{siteConfig.brandLine}</p>
+          <p className="mt-2 text-sm">{common("brandLine")}</p>
         </div>
         <address className="text-sm not-italic">
           {siteConfig.contact.address}
@@ -41,7 +43,7 @@ export function SiteFooter() {
             </Link>
           ))}
         </nav>
-        <nav aria-label="Legal" className="flex flex-col items-start gap-1.5 text-sm">
+        <nav aria-label={a11y("legalNavigation")} className="flex flex-col items-start gap-1.5 text-sm">
           <Link href="/privacy" className="inline-flex min-h-[32px] items-center hover:text-white">{t("privacy")}</Link>
           <Link href="/cookie-policy" className="inline-flex min-h-[32px] items-center hover:text-white">{t("cookies")}</Link>
           <CookieSettingsButton />

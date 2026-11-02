@@ -3,10 +3,12 @@ import { expect, test } from "@playwright/test";
 test("preview language navigation preserves the page and host", async ({ page }) => {
   await page.goto("/genetikon/en/about/");
   await page.getByLabel("Cookie consent").getByRole("button", { name: /necessary only/i }).click();
+  await page.evaluate(() => Reflect.set(window, "__languageNavigationProbe", "same-document"));
   for (const locale of ["tr", "ru", "ka", "az", "en"]) {
     await page.getByRole("link", { name: locale.toUpperCase(), exact: true }).click();
     await expect(page).toHaveURL(new RegExp(`/genetikon/${locale}/about/$`));
     expect(new URL(page.url()).hostname).toBe("127.0.0.1");
+    expect(await page.evaluate(() => Reflect.get(window, "__languageNavigationProbe"))).toBe("same-document");
     await expect(page.locator('meta[name="robots"]')).toHaveAttribute("content", /noindex/);
     await expect(page.locator('meta[property="og:url"]')).toHaveAttribute("content", `https://yurdakul.net.tr/genetikon/${locale}/about/`);
   }

@@ -1,6 +1,25 @@
 # Genetikon — yayın öncesi içerik kararları
 
-İnceleme: 2 Kasım 2026. Bu kayıt kaynak kodu incelemesidir; teknik değişikliklerin canlıya çıktığı veya doktorun içerikleri onayladığı anlamına gelmez. Tıbbi metin, sayı, marka adı ve çeviri değiştirilmedi. Bu tur yayın hedefi yalnız Yurdakul önizlemesidir.
+İnceleme: 2 Kasım 2026. Bu kayıt kaynak kodu incelemesidir; teknik değişikliklerin canlıya çıktığı veya doktorun içerikleri onayladığı anlamına gelmez. İlk teknik turda tıbbi metin, sayı, marka adı ve çeviri değiştirilmedi. Aşağıdaki başlangıç bulgularını 2 Kasım sonraki kapsam güncellemesiyle birlikte okuyun. Bu tur yayın hedefi yalnız Yurdakul önizlemesidir.
+
+## 2 Kasım kapsam güncellemesi — çeviri yetkisi
+
+Owner, sonraki mesajında AZ/RU/KA çevirilerini teknik ekibe verdi. Dokuz alt sayfanın 302 alan/dil çevirisi ve ortak arayüz etiketleri hazırlanıyor; aşağıdaki “Kullanıcıya ait çeviri işi” bölümü başlangıç bulgusudur. Son teslim/kanıt `TRANSLATION_DELIVERY_20261102.md` kaydında tutulur. Çeviri, doktorun tıbbi veya hukuki onayı değildir.
+
+Owner tarafından doktor cevabı beklendiği yeniden belirtilen konular:
+
+1. Her dilde marka adı ve Türkçe unvan.
+2. PGT / PGD ve açılımı.
+3. NIPT T21 %99, T18 %98, T13 >%65 oranları ve kaynakları.
+4. Tekrarlayan düşüklerde %50–60, yaklaşık 100.000 genetik durum ve babalık testi %99,99 iddiaları.
+5. 50 cc kan, üç kez 10 günlük IV/cilt altı uygulama, üç ay ara ve yedi ay takip protokolü; yayımlanması ve Gürcistan mevzuatı.
+6. MS, ALS, otizm, Alzheimer ve demans dahil uygulama alanlarının kapsamı/kanıtı.
+7. Esansiyel/senil tremor ifadesi ve PES açılımı.
+8. Fetal/embriyonik hücrelerin merkezde gerçekten kullanılıp kullanılmadığı.
+9. Akreditasyon/sertifika belgeleri ve placeholder vaadi.
+10. Konya tüzel kişiliği ve bilgi@genetikon.com veri sorumlusu bilgileri.
+
+Bu konularda karar verilmedi; mevcut rakam, kısaltma, iletişim ve klinik iddia çevirilerde değiştirilmez. Eski kapanma bandı teknik turda kaldırıldı; bu işlem güncel faaliyet teyidi sayılmaz.
 
 ## Yayını etkileyen kararlar
 

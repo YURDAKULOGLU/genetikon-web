@@ -84,7 +84,8 @@
     "text": "По умолчанию мы используем только строго необходимые cookie. Аналитические cookie загружаются только с вашего согласия.",
     "accept": "Принять аналитику",
     "reject": "Только необходимые",
-    "learnMore": "Политика cookie"
+    "learnMore": "Политика cookie",
+    "settings": "Настройки cookie"
   },
   "sticky": {
     "whatsapp": "WhatsApp",
@@ -92,6 +93,14 @@
     "contact": "Связаться"
   },
   "a11y": {
-    "skipToContent": "Перейти к содержимому"
+    "skipToContent": "Перейти к содержимому",
+    "language": "Язык",
+    "primaryNavigation": "Основная навигация",
+    "mobileNavigation": "Основная мобильная навигация",
+    "legalNavigation": "Правовая информация",
+    "cookieConsent": "Согласие на использование cookie"
+  },
+  "common": {
+    "brandLine": "Центр генетики · Лаборатория терапии стволовыми клетками"
   }
 }

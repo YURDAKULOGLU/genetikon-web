@@ -4,6 +4,8 @@ Yetkili yayın kapsamı: yalnız `https://yurdakul.net.tr/genetikon/`.
 `www.genetikon.com` yayını, DNS değişimi ve doktora/kullanıcıya ait içerik
 kararları bu teslimin dışında. GitHub kaynak kodu ve host alt modül akışı kullanılır.
 
+> Bu kayıt ilk teknik teslimi anlatır. Owner aynı gün çeviri yetkisini de verdi; dil kapsamı ve geçiş performansının sonraki durumu `TRANSLATION_DELIVERY_20261102.md` içindedir.
+
 ## Yapılanlar
 
 - Önizlemedeki arşiv/kapanma bandı ve kök yönlendirme başlığındaki “site preview” kaldırıldı. Bu, merkezin yeniden açıldığına dair doğrulama değildir.

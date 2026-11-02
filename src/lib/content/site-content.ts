@@ -1,4 +1,5 @@
 // AUTO-GENERATED from bilingual content workflow (wf_ae90fbdb-0c9).
+import { applyContentTranslations } from "./translated-content";
 // Kaynak: Data/content/departments.md + archive. Medical-compliance uyumlu.
 // Elle düzenleme yerine içeriği Data/content'te güncelleyip yeniden üretin.
 
@@ -1613,3 +1614,6 @@ export const legalContent: Record<string, LegalSection> =
     ]
   }
 };
+
+
+applyContentTranslations({ departmentsContent, pagesContent, legalContent });

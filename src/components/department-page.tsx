@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { departmentsContent } from "@/lib/content/site-content";
 
@@ -20,11 +20,13 @@ function DepartmentJsonLd({
   title,
   description,
   locale,
+  homeLabel,
 }: {
   slug: string;
   title: string;
   description: string;
   locale: string;
+  homeLabel: string;
 }) {
   const path = `/departments/${slug}`;
   const url = absoluteSiteUrl(localizedPath(locale, path));
@@ -33,14 +35,14 @@ function DepartmentJsonLd({
     "@type": "MedicalWebPage",
     name: title,
     description: description.slice(0, 300),
-    inLanguage: locale === "tr" ? "tr" : "en",
+    inLanguage: locale,
     url,
     isPartOf: { "@id": `${siteUrl}#website` },
     publisher: { "@id": `${siteUrl}#organization` },
     breadcrumb: {
       "@type": "BreadcrumbList",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: absoluteSiteUrl(localizedPath(locale)) },
+        { "@type": "ListItem", position: 1, name: homeLabel, item: absoluteSiteUrl(localizedPath(locale)) },
         { "@type": "ListItem", position: 2, name: title, item: url },
       ],
     },
@@ -65,6 +67,7 @@ export async function DepartmentPage({
   locale: string;
 }) {
   setRequestLocale(locale);
+  const nav = await getTranslations({ locale, namespace: "nav" });
   const content = departmentsContent[slug];
   if (!content) notFound();
 
@@ -75,6 +78,7 @@ export async function DepartmentPage({
         title={lt(content.title, locale)}
         description={lt(content.intro, locale)}
         locale={locale}
+        homeLabel={nav("home")}
       />
       {/* Departman hero banner — gerçek görsel */}
       <div className="relative flex min-h-[42vh] items-end overflow-hidden bg-brand-900 text-white">

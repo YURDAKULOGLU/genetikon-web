@@ -30,8 +30,8 @@ export function ContactForm() {
       return;
     }
     setError(null);
-    const subject = `Information request — ${name}`;
-    const body = `Name: ${name}\nContact: ${contact}\n\n${message}`;
+    const subject = `${t("title")} — ${name}`;
+    const body = `${t("name")}: ${name}\n${t("contact")}: ${contact}\n\n${message}`;
     window.location.href = `mailto:${siteConfig.contact.email}?subject=${encodeURIComponent(
       subject,
     )}&body=${encodeURIComponent(body)}`;

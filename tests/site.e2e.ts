@@ -30,7 +30,7 @@ test("localized route, legal pages and cookie consent work", async ({ page }) =>
   await expect(
     page.getByRole("heading", { name: /tıbbi genetik, kök hücre tedavisi ve üreme sağlığı/i }),
   ).toBeVisible();
-  await page.getByLabel("Cookie consent").getByRole("link", { name: /çerez politikası/i }).click();
+  await page.locator("#cookie-consent").getByRole("link", { name: /çerez politikası/i }).click();
   await expect(page).toHaveURL(/\/tr\/cookie-policy$/);
   await expect(page.getByRole("heading", { name: /çerez politikası/i })).toBeVisible();
 });
