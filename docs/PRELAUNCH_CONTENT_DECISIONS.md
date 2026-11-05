@@ -1,5 +1,11 @@
 # Genetikon — yayın öncesi içerik kararları
 
+## 5 Kasım 2026 — güncel durum
+
+Sonraki owner kararı mevcut **yurdakul.net.tr/genetikon/** yayınının düzeltilmesine izin verdi. Önceki “yalnız yerel/yayın yok” sınırı bu hedef için kalktı; ana domain ve başka hedefler kapsam dışı. Kaynaksız klinik yüzdeler/sayım kaldırıldı; hekimin protokol anlatımı bağımsız doğrulama olmadığı açıkça belirtilerek sınırlandı. Karar ve kapsam ayrımı aşağıdaki bağlantılı notun başındadır. Dağıtım sonucu `PREVIEW_RELEASE_20261105.md` ile ayrıca doğrulanmalıdır.
+
+13 müşteri yanıtı alındı ve [yerel uzlaştırma kaydına](CLIENT_RECONCILIATION_20261105.md) işlendi. Marka/e-posta tercihleri ve güvenli terminoloji düzeltmeleri yerel taslakta hazır; tıbbi sayılar, protokol, endikasyonlar ve hukuki kimlik için kanıt açıkları sürüyor. **Bu tur önizleme dahil yayın, push veya deploy yok.** Aşağıdaki 2 Kasım metni tarihsel başlangıç durumudur; “cevap bekleniyor” ve o tura ait yayın hedefi ifadeleri yeni kaydın yerine geçmez.
+
 İnceleme: 2 Kasım 2026. Bu kayıt kaynak kodu incelemesidir; teknik değişikliklerin canlıya çıktığı veya doktorun içerikleri onayladığı anlamına gelmez. İlk teknik turda tıbbi metin, sayı, marka adı ve çeviri değiştirilmedi. Aşağıdaki başlangıç bulgularını 2 Kasım sonraki kapsam güncellemesiyle birlikte okuyun. Bu tur yayın hedefi yalnız Yurdakul önizlemesidir.
 
 ## 2 Kasım kapsam güncellemesi — çeviri yetkisi

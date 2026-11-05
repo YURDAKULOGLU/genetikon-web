@@ -17,7 +17,7 @@ export async function LegalPage({
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-16">
-      <h1 lang={textLocale(c.heading, locale)} className="font-serif text-4xl text-brand-800">{lt(c.heading, locale)}</h1>
+      <h1 lang={textLocale(c.heading, locale)} className="font-serif text-4xl text-brand-800 [overflow-wrap:anywhere]">{lt(c.heading, locale)}</h1>
       {c.intro && <p lang={textLocale(c.intro, locale)} className="mt-6 text-ink-muted">{lt(c.intro, locale)}</p>}
       <div className="mt-8 space-y-6">
         {c.items.map((item) => (

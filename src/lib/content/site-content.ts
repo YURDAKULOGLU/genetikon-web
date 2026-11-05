@@ -1,7 +1,7 @@
 // AUTO-GENERATED from bilingual content workflow (wf_ae90fbdb-0c9).
 import { applyContentTranslations } from "./translated-content";
-// Kaynak: Data/content/departments.md + archive. Medical-compliance uyumlu.
-// Elle düzenleme yerine içeriği Data/content'te güncelleyip yeniden üretin.
+// Historical source: Data/content/departments.md + archive; not clinical/legal approval.
+// Canonical edits live here. Review: docs/CLIENT_RECONCILIATION_20261105.md.
 
 // en zorunlu (fallback); tr/ru/ka/az opsiyonel (kademeli çeviri).
 // Çeviri yoksa lt() EN'e düşer — site 5 dilde çalışır, derin içerik çevrildikçe dolar.
@@ -33,8 +33,8 @@ export const departmentsContent: Record<string, DepartmentContent> =
       "tr": "Tıbbi Genetik Laboratuvarı"
     },
     "intro": {
-      "en": "Our Medical Genetics Laboratory provides diagnostic testing and genetic evaluation across the cytogenetic, molecular, and prenatal spectrum. Genetic assessment often begins with counseling: a review of family history and pedigree, followed, where indicated, by chromosome analysis, DNA sequencing, or enzyme-level measurement. With roughly 100,000 genetic conditions recognized to date, testing is used to clarify whether an individual is affected by, or is a carrier of, a specific condition. All services are delivered on an informational basis and are intended to support, not replace, the guidance of your treating physician.",
-      "tr": "Tıbbi Genetik Laboratuvarımız; sitogenetik, moleküler ve prenatal alanları kapsayacak şekilde tanısal testler ve genetik değerlendirme sunar. Genetik değerlendirme çoğu zaman danışmanlıkla başlar: aile öyküsü ve soy ağacının (pedigree) incelenmesi ve gerektiğinde kromozom analizi, DNA dizileme veya enzim düzeyi ölçümü. Bugüne kadar yaklaşık 100.000 genetik durum tanımlanmıştır; testler, bir bireyin belirli bir durumdan etkilenip etkilenmediğini ya da taşıyıcı olup olmadığını netleştirmek için kullanılır. Tüm hizmetler bilgilendirme amacıyla sunulur ve tedavi eden hekiminizin yönlendirmesinin yerine geçmez; onu destekler."
+      "en": "Medical genetics uses family history, genetic counselling and, when indicated, laboratory tests to investigate inherited conditions and carrier status. The information here explains test categories; it does not confirm that a particular test is currently available. Confirm availability, laboratory validation and the suitability of any test with your physician before arranging testing.",
+      "tr": "Tıbbi genetik; kalıtsal durumları ve taşıyıcılığı araştırmak için aile öyküsü, genetik danışmanlık ve gerektiğinde laboratuvar testlerinden yararlanır. Buradaki bilgiler test türlerini açıklar; belirli bir testin güncel olarak sunulduğunu doğrulamaz. Test yaptırmadan önce hizmetin mevcut olduğunu, laboratuvar validasyonunu ve testin uygunluğunu hekiminizle teyit edin."
     },
     "sections": [
       {
@@ -63,8 +63,8 @@ export const departmentsContent: Record<string, DepartmentContent> =
               "tr": "Babalık Testi / DNA"
             },
             "body": {
-              "en": "Paternity testing compares DNA markers between individuals to establish biological relationship, typically reaching an accuracy of around 99.99% when a relationship is confirmed. It is generally performed using a buccal (inner cheek) mucosa swab, which is non-invasive and suitable for both adults and children. A signed consent form is required before testing proceeds.",
-              "tr": "Babalık testi, biyolojik ilişkiyi belirlemek için bireyler arasındaki DNA belirteçlerini (marker) karşılaştırır; ilişki doğrulandığında doğruluk oranı tipik olarak yaklaşık %99,99'a ulaşır. Test genellikle non-invaziv olan ve hem yetişkinler hem de çocuklar için uygun olan yanak içi (bukkal) mukoza sürüntüsü ile yapılır. Test öncesinde imzalı onam formu gereklidir."
+              "en": "Paternity testing compares DNA markers to assess biological relationships. The probability reported depends on the laboratory method, the samples and the statistical model; a single accuracy percentage should not be assumed for every test. Sampling, consent and any legal requirements must be agreed with the testing laboratory.",
+              "tr": "Babalık testi biyolojik akrabalığı değerlendirmek için DNA belirteçlerini karşılaştırır. Bildirilen olasılık laboratuvar yöntemine, örneklere ve istatistiksel modele bağlıdır; her test için tek bir doğruluk yüzdesi varsayılmamalıdır. Numune alma, onam ve varsa hukuki gereklilikler testi yapan laboratuvarla netleştirilmelidir."
             }
           },
           {
@@ -73,8 +73,8 @@ export const departmentsContent: Record<string, DepartmentContent> =
               "tr": "Sitogenetik"
             },
             "body": {
-              "en": "Cytogenetics examines the full set of 46 chromosomes through karyotyping and banding techniques to detect numerical and structural changes. It is applied in both prenatal and postnatal settings and may be relevant in advanced maternal age, recurrent miscarriage (where 50-60% of cases have a chromosomal basis), translocations and deletions, trisomies 13, 16, 18 and 21, and Turner or Klinefelter mosaicism. Suitable samples include peripheral blood, amniotic fluid, fetal (cord) blood, chorionic villus samples, products of conception, and tissue or skin biopsy.",
-              "tr": "Sitogenetik; sayısal ve yapısal değişiklikleri saptamak için karyotipleme ve bantlama teknikleriyle 46 kromozomun tamamını inceler. Hem prenatal hem postnatal ortamda uygulanır ve ileri anne yaşı, tekrarlayan düşükler (olguların %50-60'ında kromozomal kökenli), translokasyon ve delesyonlar, 13, 16, 18 ve 21 trizomileri ile Turner veya Klinefelter mozaisizmi durumlarında anlamlı olabilir. Uygun numuneler arasında periferik kan, amniyon sıvısı, fetal (kordon) kanı, koryon villus örneği, gebelik ürünleri ve doku veya deri biyopsisi yer alır."
+              "en": "Cytogenetics examines the full set of 46 chromosomes through karyotyping and banding techniques to detect numerical and structural changes. It is applied in both prenatal and postnatal settings and may be relevant in advanced maternal age, recurrent miscarriage, translocations and deletions, trisomies 13, 16, 18 and 21, and Turner or Klinefelter mosaicism. Suitable samples include peripheral blood, amniotic fluid, fetal (cord) blood, chorionic villus samples, products of conception, and tissue or skin biopsy.",
+              "tr": "Sitogenetik; sayısal ve yapısal değişiklikleri saptamak için karyotipleme ve bantlama teknikleriyle 46 kromozomun tamamını inceler. Hem prenatal hem postnatal ortamda uygulanır ve ileri anne yaşı, tekrarlayan düşükler, translokasyon ve delesyonlar, 13, 16, 18 ve 21 trizomileri ile Turner veya Klinefelter mozaisizmi durumlarında anlamlı olabilir. Uygun numuneler arasında periferik kan, amniyon sıvısı, fetal (kordon) kanı, koryon villus örneği, gebelik ürünleri ve doku veya deri biyopsisi yer alır."
             }
           },
           {
@@ -133,8 +133,8 @@ export const departmentsContent: Record<string, DepartmentContent> =
               "tr": "Dolaşan Fetal DNA / NIPT"
             },
             "body": {
-              "en": "Non-invasive prenatal testing (NIPT) analyzes circulating fetal DNA in a maternal blood sample to screen for common fetal chromosomal anomalies without the miscarriage risk associated with invasive procedures. Reported detection rates are approximately 99% for Down syndrome (trisomy 21), around 98% for trisomy 18, and above 65% for trisomy 13. As a screening test, a result that indicates increased risk is generally confirmed with a diagnostic procedure.",
-              "tr": "Non-invaziv prenatal test (NIPT); yaygın fetal kromozomal anomalileri, invaziv işlemlerle ilişkili düşük riski olmadan taramak için anne kanı örneğindeki dolaşan fetal DNA'yı analiz eder. Bildirilen saptama oranları Down sendromu (trizomi 21) için yaklaşık %99, trizomi 18 için yaklaşık %98 ve trizomi 13 için %65'in üzerindedir. Bir tarama testi olduğundan, artmış risk gösteren bir sonuç genellikle tanısal bir işlemle doğrulanır."
+              "en": "Non-invasive prenatal testing (NIPT) analyses cell-free DNA in maternal blood to screen for selected fetal chromosomal conditions. It is a screening test, not a diagnosis. Detection rates and the meaning of a positive result vary by assay, condition and population. No centre-specific performance percentage is established here. A high-risk result requires genetic counselling and discussion of confirmatory diagnostic testing.",
+              "tr": "Non-invaziv prenatal test (NIPT), belirli fetal kromozomal durumları taramak için anne kanındaki hücre dışı DNA’yı analiz eder. Tanı değil tarama testidir. Saptama oranları ve pozitif bir sonucun anlamı kullanılan teste, duruma ve popülasyona göre değişir. Burada merkeze özgü bir performans yüzdesi doğrulanmış değildir. Yüksek riskli sonuç genetik danışmanlık ve doğrulayıcı tanı testinin değerlendirilmesini gerektirir."
             }
           },
           {
@@ -448,8 +448,8 @@ export const departmentsContent: Record<string, DepartmentContent> =
               "tr": "Periferik ve fonksiyonel nöroloji"
             },
             "body": {
-              "en": "Areas explored include peripheral nerve damage, polyneuropathy, neurogenic bladder, trigeminal neuralgia, anosmia/parosmia, isolated epilepsy and essential (senile) tremor. Cell-based approaches remain investigational and the evidence differs by condition. No benefit is promised, results vary from person to person, and suitability is determined only by your physician.",
-              "tr": "İncelenen alanlar arasında periferik sinir hasarı, polinöropati, nörojenik mesane, trigeminal nevralji, anozmi/parozmi, izole epilepsi ve esansiyel (senil) tremor yer alır. Hücre temelli yaklaşımlar araştırma aşamasında kalır ve kanıtlar duruma göre değişir. Hiçbir yarar vaat edilmez, sonuçlar kişiden kişiye değişir ve uygunluk yalnızca hekiminiz tarafından belirlenir."
+              "en": "Areas explored include peripheral nerve damage, polyneuropathy, neurogenic bladder, trigeminal neuralgia, anosmia/parosmia, isolated epilepsy and essential tremor. Cell-based approaches remain investigational and the evidence differs by condition. No benefit is promised, results vary from person to person, and suitability is determined only by your physician.",
+              "tr": "İncelenen alanlar arasında periferik sinir hasarı, polinöropati, nörojenik mesane, trigeminal nevralji, anozmi/parozmi, izole epilepsi ve esansiyel tremor yer alır. Hücre temelli yaklaşımlar araştırma aşamasında kalır ve kanıtlar duruma göre değişir. Hiçbir yarar vaat edilmez, sonuçlar kişiden kişiye değişir ve uygunluk yalnızca hekiminiz tarafından belirlenir."
             }
           },
           {
@@ -504,12 +504,12 @@ export const departmentsContent: Record<string, DepartmentContent> =
           },
           {
             "title": {
-              "en": "Aesthetic & topical applications (PES)",
-              "tr": "Estetik ve topikal uygulamalar (PES)"
+              "en": "Aesthetic & topical applications (PES — Platelet Extract Solution)",
+              "tr": "Estetik ve topikal uygulamalar (PES — Platelet Extract Solution)"
             },
             "body": {
-              "en": "Alongside laboratory research, autologous exosome / PES-based aesthetic and topical applications are described — including skin, scar, hair and dermatological care and a range of topical care products. These are cosmetic and supportive in nature, are not medical treatments for disease, and individual results vary. A specialist should assess suitability.",
-              "tr": "Laboratuvar araştırmalarının yanında, otolog eksozom / PES temelli estetik ve topikal uygulamalar tanımlanır — cilt, iz (skar), saç ve dermatolojik bakım ile bir dizi topikal bakım ürünü dâhil. Bunlar doğası gereği kozmetik ve destekleyicidir, hastalıklar için tıbbi tedavi değildir ve bireysel sonuçlar değişir. Uygunluğu bir uzman değerlendirmelidir."
+              "en": "PES is used here as an abbreviation for Platelet Extract Solution. This name alone does not establish the composition, exosome content, safety or clinical effectiveness of a product.",
+              "tr": "PES burada Platelet Extract Solution kısaltması olarak kullanılır. Bu ad tek başına bir ürünün bileşimini, eksozom içeriğini, güvenliğini veya klinik etkinliğini göstermez."
             }
           }
         ]
@@ -630,12 +630,12 @@ export const departmentsContent: Record<string, DepartmentContent> =
       },
       {
         "heading": {
-          "en": "Treatment Process",
-          "tr": "Tedavi Süreci"
+          "en": "Doctor-described protocol",
+          "tr": "Hekimin aktardığı protokol"
         },
         "intro": {
-          "en": "When a protocol proceeds, it typically follows the stages below. Timeframes are approximate and may differ by individual and by protocol.",
-          "tr": "Bir protokol yürütüldüğünde genellikle aşağıdaki aşamaları izler. Süreler yaklaşıktır ve kişiye ve protokole göre değişebilir."
+          "en": "The stages and timings below are the physician’s description, not an independently validated treatment schedule. Product-specific authorisation, evidence for each indication and safety data have not been verified for this description. It must not be read as an established treatment, a recommendation to undergo treatment or confirmation of current availability. Obtain independent specialist advice and the relevant documentation before any decision.",
+          "tr": "Aşağıdaki aşamalar ve süreler hekimin aktardığı bilgilerdir; bağımsız olarak doğrulanmış bir tedavi takvimi değildir. Bu anlatım için ürüne özgü izinler, her endikasyona ait kanıtlar ve güvenlik verileri doğrulanmış değildir. Yerleşik tedavi, tedaviye başlama önerisi veya güncel hizmet teyidi olarak okunmamalıdır. Karar vermeden önce bağımsız uzman görüşü ve ilgili belgeleri isteyin."
         },
         "items": [
           {
@@ -797,8 +797,8 @@ export const departmentsContent: Record<string, DepartmentContent> =
           },
           {
             "title": {
-              "en": "PGD (Preimplantation Genetic Diagnosis)",
-              "tr": "PGT/PGD (Preimplantasyon Genetik Tanı)"
+              "en": "Preimplantation Genetic Testing (PGT)",
+              "tr": "Preimplantasyon Genetik Test (PGT)"
             },
             "body": {
               "en": "Embryos created through IVF may be examined genetically before transfer. It is considered in situations such as known carrier status; suitability is determined clinically.",
@@ -1149,8 +1149,8 @@ export const pagesContent: Record<string, PageContent> =
               "tr": "Akreditasyon ve sertifikasyon"
             },
             "body": {
-              "en": "We hold quality standards and certifications appropriate to a medical genetics and laboratory center. The specific accreditations and certificate details for each laboratory will be listed and documented on this page. Any accreditation shown corresponds to a valid, verifiable certificate; we do not display decorative or unverifiable marks.",
-              "tr": "Bir tıbbi genetik ve laboratuvar merkezine uygun kalite standartlarına ve sertifikalara sahibiz. Her laboratuvara ait belirli akreditasyonlar ve sertifika ayrıntıları bu sayfada listelenip belgelenecektir. Gösterilen her akreditasyon, geçerli ve doğrulanabilir bir sertifikaya karşılık gelir; dekoratif veya doğrulanamaz işaretler göstermeyiz."
+              "en": "The centre currently has no accreditation or certification.",
+              "tr": "Merkezin şu anda akreditasyonu veya sertifikası bulunmamaktadır."
             }
           }
         ]
@@ -1165,7 +1165,7 @@ export const pagesContent: Record<string, PageContent> =
     },
     "intro": {
       "en": "Genetikon Genetics Center is based in Batumi, on Georgia's Black Sea coast, and welcomes patients travelling from abroad. Batumi is reachable by direct and connecting flights from many cities, and our multilingual coordination team helps you plan each stage of your visit. This section explains how to reach us, where you may stay, the support available during your visit, and what a typical journey looks like from home to Batumi and back. Programmes are arranged individually; details and any package are shared on request, as the scope varies by the medical protocol your treating physician recommends. This page is informational and is not a substitute for medical advice — please consult a physician about your specific situation.",
-      "tr": "Genetikon Genetik Merkezi, Gürcistan'ın Karadeniz kıyısındaki Batum'da yer alır ve yurt dışından gelen hastaları ağırlar. Batum'a birçok şehirden doğrudan veya aktarmalı uçuşlarla ulaşılabilir; çok dilli koordinasyon ekibimiz ziyaretinizin her aşamasını planlamanıza yardımcı olur. Bu bölüm; bize nasıl ulaşacağınızı, nerede konaklayabileceğinizi, ziyaretiniz boyunca sunulan desteği ve evden Batum'a ve tekrar eve uzanan tipik bir sürecin adımlarını açıklar. Programlar kişiye özel düzenlenir; ayrıntılar ve varsa paket bilgisi talep üzerine paylaşılır, çünkü kapsam tedavi eden hekiminizin önerdiği tıbbi protokole göre değişir. Bu sayfa bilgilendirme amaçlıdır ve tıbbi tavsiye yerine geçmez — kendi durumunuz için lütfen bir hekime danışın."
+      "tr": "Genetikon Genetics Center, Gürcistan'ın Karadeniz kıyısındaki Batum'da yer alır ve yurt dışından gelen hastaları ağırlar. Batum'a birçok şehirden doğrudan veya aktarmalı uçuşlarla ulaşılabilir; çok dilli koordinasyon ekibimiz ziyaretinizin her aşamasını planlamanıza yardımcı olur. Bu bölüm; bize nasıl ulaşacağınızı, nerede konaklayabileceğinizi, ziyaretiniz boyunca sunulan desteği ve evden Batum'a ve tekrar eve uzanan tipik bir sürecin adımlarını açıklar. Programlar kişiye özel düzenlenir; ayrıntılar ve varsa paket bilgisi talep üzerine paylaşılır, çünkü kapsam tedavi eden hekiminizin önerdiği tıbbi protokole göre değişir. Bu sayfa bilgilendirme amaçlıdır ve tıbbi tavsiye yerine geçmez — kendi durumunuz için lütfen bir hekime danışın."
     },
     "sections": [
       {
@@ -1405,8 +1405,8 @@ export const pagesContent: Record<string, PageContent> =
               "tr": "Tüp Bebek"
             },
             "body": {
-              "en": "Read about IVF/ICSI, donation, surrogacy and PGD, with process guides for international patients. Success information is presented by age band and separated by fresh/frozen and first/repeat cycles — never as a single headline figure. Read in the IVF Center.",
-              "tr": "IVF/ICSI, donasyon, taşıyıcı annelik ve PGD hakkında, uluslararası hastalar için süreç rehberleriyle bilgi edinin. Başarı bilgisi yaş bandına göre sunulur ve taze/dondurulmuş ile ilk/tekrar döngü olarak ayrılır — tek bir başlık rakamı olarak değil. Tüp Bebek Merkezi bölümünde okuyun."
+              "en": "Read about IVF/ICSI, donation, surrogacy and PGT, with process guides for international patients. Success information is presented by age band and separated by fresh/frozen and first/repeat cycles — never as a single headline figure. Read in the IVF Center.",
+              "tr": "IVF/ICSI, donasyon, taşıyıcı annelik ve PGT hakkında, uluslararası hastalar için süreç rehberleriyle bilgi edinin. Başarı bilgisi yaş bandına göre sunulur ve taze/dondurulmuş ile ilk/tekrar döngü olarak ayrılır — tek bir başlık rakamı olarak değil. Tüp Bebek Merkezi bölümünde okuyun."
             }
           }
         ]
@@ -1429,12 +1429,12 @@ export const legalContent: Record<string, LegalSection> =
     "items": [
       {
         "title": {
-          "en": "1. Data Controller",
-          "tr": "1. Veri Sorumlusu"
+          "en": "1. Privacy contact",
+          "tr": "1. Gizlilik iletişimi"
         },
         "body": {
-          "en": "The data controller is Genetikon Genetics Center, located at 165 Vakhtang Gorgasali St, Batumi 6004, Georgia (the primary establishment). For data subjects in Turkiye and for KVKK-scoped processing, the affiliated Turkish entity Genetikon AR-GE Danismanlik Sag. Hizm. Tarim Hay. San. ve Tic. Ltd. Sti. (Selcuklu / Konya, Turkiye) acts as controller/joint controller as applicable. Contact for privacy matters: batumi@genetikon.com (Batumi) or bilgi@genetikon.com (Turkiye). Requests about controller allocation, VERBIS registration status, or representative details can be sent to the same privacy contacts.",
-          "tr": "Veri sorumlusu, 165 Vakhtang Gorgasali Cad., Batumi 6004, Gürcistan adresinde bulunan Genetikon Genetics Center'dir (birincil yerleşim). Türkiye'deki ilgili kişiler ve KVKK kapsamındaki işlemeler bakımından, bağlı Türk tüzel kişiliği Genetikon AR-GE Danışmanlık Sağ. Hizm. Tarım Hay. San. ve Tic. Ltd. Şti. (Selçuklu / Konya, Türkiye) duruma göre veri sorumlusu / ortak veri sorumlusu sıfatıyla hareket eder. Gizlilik konuları için iletişim: batumi@genetikon.com (Batumi) veya bilgi@genetikon.com (Türkiye). Veri sorumlusu dağılımı, VERBİS kayıt durumu veya temsilci bilgilerine ilişkin talepler aynı gizlilik iletişim adreslerine iletilebilir."
+          "en": "For enquiries about this website and the handling of personal data, contact batumi@genetikon.com.",
+          "tr": "Bu web sitesi ve kişisel verilerin işlenmesi hakkındaki sorularınız için batumi@genetikon.com ile iletişime geçin."
         }
       },
       {
@@ -1483,8 +1483,8 @@ export const legalContent: Record<string, LegalSection> =
           "tr": "6. İlgili Kişinin (Veri Sahibinin) Hakları"
         },
         "body": {
-          "en": "Under KVKK Art. 11 and, where applicable, GDPR Arts. 15-22, you have the right to: learn whether your data is processed and request information about it; know the purpose of processing; know the third parties to whom data is disclosed; request correction of inaccurate data; request erasure or destruction; object to results arising solely from automated analysis; withdraw consent; and claim compensation for damage caused by unlawful processing. GDPR-scoped subjects additionally have the rights to data portability and to lodge a complaint with a supervisory authority. To exercise these rights, contact batumi@genetikon.com or bilgi@genetikon.com; we respond within the periods required by law. You may also complain to the Turkish Personal Data Protection Authority (KVKK Kurumu) or your competent EU supervisory authority.",
-          "tr": "KVKK m.11 ve uygulanabildiği ölçüde GDPR m.15-22 uyarınca şu haklara sahipsiniz: verinizin işlenip işlenmediğini öğrenme ve buna ilişkin bilgi talep etme; işleme amacını öğrenme; verinin aktarıldığı üçüncü kişileri bilme; yanlış verinin düzeltilmesini isteme; silinmesini veya yok edilmesini isteme; yalnızca otomatik analiz sonucu ortaya çıkan sonuca itiraz etme; rızayı geri alma; ve hukuka aykırı işlemeden doğan zararın giderilmesini talep etme. GDPR kapsamındaki kişiler ayrıca veri taşınabilirliği ve bir denetim makamına şikayette bulunma haklarına sahiptir. Bu hakları kullanmak için batumi@genetikon.com veya bilgi@genetikon.com ile iletişime geçin; kanunda öngörülen süreler içinde yanıt veririz. Ayrıca Kişisel Verileri Koruma Kurumu'na (KVKK Kurumu) veya yetkili AB denetim makamınıza şikayette bulunabilirsiniz."
+          "en": "Under KVKK Art. 11 and, where applicable, GDPR Arts. 15-22, you have the right to: learn whether your data is processed and request information about it; know the purpose of processing; know the third parties to whom data is disclosed; request correction of inaccurate data; request erasure or destruction; object to results arising solely from automated analysis; withdraw consent; and claim compensation for damage caused by unlawful processing. GDPR-scoped subjects additionally have the rights to data portability and to lodge a complaint with a supervisory authority. To exercise these rights, contact batumi@genetikon.com; we respond within the periods required by law. You may also complain to the Turkish Personal Data Protection Authority (KVKK Kurumu) or your competent EU supervisory authority.",
+          "tr": "KVKK m.11 ve uygulanabildiği ölçüde GDPR m.15-22 uyarınca şu haklara sahipsiniz: verinizin işlenip işlenmediğini öğrenme ve buna ilişkin bilgi talep etme; işleme amacını öğrenme; verinin aktarıldığı üçüncü kişileri bilme; yanlış verinin düzeltilmesini isteme; silinmesini veya yok edilmesini isteme; yalnızca otomatik analiz sonucu ortaya çıkan sonuca itiraz etme; rızayı geri alma; ve hukuka aykırı işlemeden doğan zararın giderilmesini talep etme. GDPR kapsamındaki kişiler ayrıca veri taşınabilirliği ve bir denetim makamına şikayette bulunma haklarına sahiptir. Bu hakları kullanmak için batumi@genetikon.com ile iletişime geçin; kanunda öngörülen süreler içinde yanıt veririz. Ayrıca Kişisel Verileri Koruma Kurumu'na (KVKK Kurumu) veya yetkili AB denetim makamınıza şikayette bulunabilirsiniz."
         }
       }
     ]

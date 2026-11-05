@@ -70,6 +70,7 @@ test.describe("320px preview localization layout", () => {
     { locale: "az", route: "information" },
     { locale: "ru", route: "about" },
     { locale: "ka", route: "departments/stem-cell-therapy" },
+    { locale: "ka", route: "privacy" },
   ] as const;
 
   for (const { locale, route } of narrowRoutes) {
