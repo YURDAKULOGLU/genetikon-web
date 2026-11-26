@@ -1,5 +1,5 @@
 import { spawnSync, execFileSync } from "node:child_process";
-import { readdirSync, existsSync, copyFileSync, writeFileSync } from "node:fs";
+import { readdirSync, readFileSync, existsSync, copyFileSync, writeFileSync } from "node:fs";
 import { resolve, dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { preparePreviewImages } from "./prepare-preview-images.mjs";
@@ -29,6 +29,9 @@ function walk(directory) {
   }
 }
 walk(output);
+const llmsPath = join(output, "llms.txt");
+writeFileSync(llmsPath, readFileSync(llmsPath, "utf8")
+  .replace("(auto-selected by visitor region)", "(English default; visitors can select a language from the site menu)"));
 writeFileSync(join(output, "index.html"), '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="refresh" content="0;url=/en/"><link rel="canonical" href="https://www.genetikon.com/en/"><title>Genetikon Genetics Center</title></head><body><a href="/en/">English</a> · <a href="/tr/">Türkçe</a> · <a href="/ru/">Русский</a> · <a href="/ka/">ქართული</a> · <a href="/az/">Azərbaycanca</a></body></html>\n');
 writeFileSync(join(output, ".htaccess"), `DirectoryIndex index.html
 ErrorDocument 404 /404.html
