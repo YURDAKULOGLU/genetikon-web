@@ -7,4 +7,4 @@
 3:[["children",{"s":"medical-genetics","h":96,"c":"$Q4"}]]
 2:[["children",{"s":"departments","h":64,"c":"$Q3"}]]
 1:[["children",{"s":{"n":"locale","t":"d","k":"tr","s":["_not-found","_global-error","apple-icon.png","icon.png","manifest.webmanifest","robots.txt","sitemap.xml"]},"h":48,"c":"$Q2"}]]
-0:{"b":"UP1zoznu5K8LbpZ-KmyHE","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"ijsLB96lZJKOx7zm4_eoK","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
