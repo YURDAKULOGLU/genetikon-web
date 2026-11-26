@@ -29,6 +29,7 @@ function walk(directory) {
   }
 }
 walk(output);
+copyFileSync(join(root, "scripts/hosting.web.config"), join(output, "web.config"));
 const llmsPath = join(output, "llms.txt");
 writeFileSync(llmsPath, readFileSync(llmsPath, "utf8")
   .replace("(auto-selected by visitor region)", "(English default; visitors can select a language from the site menu)"));

@@ -1,0 +1,51 @@
+name: Build production hosting site
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: production-hosting
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - run: npm run lint && npm test
+      - run: npm run build:hosting
+      - run: npx playwright install --with-deps chromium
+      - run: npm run verify:hosting
+      - name: Publish verified static files
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cd .next-hosting
+          git init -b hosting
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git remote add origin "https://github.com/${GITHUB_REPOSITORY}.git"
+          gh auth setup-git
+          if git ls-remote --exit-code origin refs/heads/hosting > /dev/null; then
+            git fetch --depth=1 origin hosting
+            git reset --soft FETCH_HEAD
+          fi
+          git add --all
+          git commit -m "Publish ${GITHUB_SHA}"
+          git push origin hosting
+      - name: Notify Plesk
+        env:
+          PLESK_DEPLOY_WEBHOOK: ${{ secrets.PLESK_DEPLOY_WEBHOOK }}
+        run: |
+          if [ -n "$PLESK_DEPLOY_WEBHOOK" ]; then
+            curl --fail --silent --show-error --max-time 120 --request POST "$PLESK_DEPLOY_WEBHOOK"
+          else
+            echo "Plesk webhook is not configured; verified hosting branch is ready."
+          fi
