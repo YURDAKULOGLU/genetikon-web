@@ -3,6 +3,8 @@ node_modules/
 .cache/
 .next/
 .next-preview/
+.next-hosting/
+delivery/
 .env
 .env.local
 *.tsbuildinfo

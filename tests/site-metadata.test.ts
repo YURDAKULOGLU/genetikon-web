@@ -13,6 +13,14 @@ async function metadataFor(preview: boolean, released: boolean) {
 }
 
 describe("deployment-aware metadata", () => {
+  it("uses domain-root paths and indexable trailing-slash metadata for shared hosting", async () => {
+    vi.stubEnv("GENETIKON_SHARED_HOSTING", "1");
+    const { pageMetadata } = await metadataFor(false, true);
+    const metadata = pageMetadata("/about", "tr", "Title", "Description");
+    expect(metadata.alternates?.canonical).toBe("https://www.genetikon.com/tr/about/");
+    expect(metadata.robots).toEqual({ index: true, follow: true });
+    expect(metadata.openGraph).toMatchObject({ images: [{ url: "https://www.genetikon.com/brand/wordmark.png" }] });
+  });
   it("keeps preview links and assets inside its subdirectory even with release enabled", async () => {
     const { pageMetadata } = await metadataFor(true, true);
     const metadata = pageMetadata("/about", "tr", "Title", "Description");

@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import { siteConfig } from "../../site.config";
-import { absoluteSiteUrl, isIndexable, isPreview, siteOrigin } from "../site-environment";
+import { absoluteSiteUrl, isIndexable, isStaticExport, siteOrigin } from "../site-environment";
 
 // All supported routes have complete translations; clinical release approval is separate.
 export function localizedPath(locale: string, path = "/") {
   const normalizedPath = path === "/" ? "" : path.startsWith("/") ? path : `/${path}`;
   const route = `/${locale}${normalizedPath}`.replace(/\/$/, "");
-  return isPreview ? `${route}/` : route;
+  return isStaticExport ? `${route}/` : route;
 }
 
 export function localizedAlternates(path = "/", currentLocale: string) {

@@ -9,6 +9,8 @@ const eslintConfig = [
       ".next/**",
       ".cache/**",
       ".next-preview/**",
+      ".next-hosting/**",
+      "delivery/**",
       "node_modules/**",
       "playwright-report/**",
       "test-results/**",

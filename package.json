@@ -15,7 +15,9 @@
     "test:a11y": "playwright test tests/a11y.e2e.ts",
     "test:e2e": "playwright test",
     "deploy:quality-gate": "npm run lint && npm run typecheck && npm test && npm run build && npm run test:e2e && npm run test:a11y",
-    "build:preview": "node scripts/build-preview.mjs"
+    "build:preview": "node scripts/build-preview.mjs",
+    "build:hosting": "node scripts/build-hosting.mjs",
+    "verify:hosting": "node scripts/verify-hosting.mjs"
   },
   "dependencies": {
     "lenis": "^1.3.25",
