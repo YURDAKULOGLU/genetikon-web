@@ -1,0 +1,817 @@
+{
+  "en": [
+    {
+      "title": "I/ STEM CELL APPLICATION LIST",
+      "groups": [
+        {
+          "heading": "A---",
+          "items": [
+            "Multiple Sclerosis (MS)",
+            "Systemic Lupus Erythematosus (SLE ) - Lupus Myelitis",
+            "Behçet's Disease - Neuro-Behçet",
+            "Neuromyelitis Optic Spectrum Disorder (NMO) Devic's Disease",
+            "MOGAD (MOG Antibody Disease)",
+            "Lyme Disease:"
+          ]
+        },
+        {
+          "heading": "B---",
+          "items": [
+            "Transverse Myelitis",
+            "Guillain-Barré Syndrome Sequelae"
+          ]
+        },
+        {
+          "heading": "C---",
+          "items": [
+            "Amyotrophic Lateral Sclerosis (ALS)",
+            "Parkinson's Disease",
+            "Charcot -Marie- Tooth Disease - \" Peroneal\" Muscular Atrophy"
+          ]
+        },
+        {
+          "heading": "D---",
+          "items": [
+            "Multisystem Atrophy (MSA)",
+            "Friedreich's Ataxia",
+            "Cerebellar Ataxia",
+            "Generalize Dystonia",
+            "Spinal Muscular Atrophy (SMA)"
+          ]
+        },
+        {
+          "heading": "E---",
+          "items": [
+            "Spinal Cord Injury",
+            "Hypoxic Brain Injury / Adult",
+            "Cerebral Palsy (CP) / Child",
+            "Hemiplegia",
+            "Traumatic Brain Injury"
+          ]
+        },
+        {
+          "heading": "F---",
+          "items": [
+            "Peripheral Nerve Damage",
+            "Polyneuropathy",
+            "Neurogenic Bladder",
+            "Anosmia – Parosmia",
+            "Trigeminal Neuralgia",
+            "Isolated Epilepsy",
+            "Senile Tremor / Essential Tremor"
+          ]
+        },
+        {
+          "heading": "G---",
+          "items": [
+            "Hearing loss due to nerve damage.",
+            "Tinnitus (Ringing in the Ears)"
+          ]
+        },
+        {
+          "heading": "H---",
+          "items": [
+            "Vision loss due to nerve damage.",
+            "Retinitis Pigmentosa (Night Blindness)",
+            "Macular Degeneration (Yellow Spot)",
+            "Optic Atrophy",
+            "Optic Neuritis"
+          ]
+        },
+        {
+          "heading": "I---",
+          "items": [
+            "Dementia",
+            "Frontotemporal dementia",
+            "Alzheimer's Disease",
+            "Autism",
+            "Asperger Syndrome",
+            "Attention Deficit Hyperactivity Disorder (ADHD)"
+          ]
+        },
+        {
+          "heading": "J---",
+          "items": [
+            "Duchenne Muscular Dystrophy (DMD)",
+            "Limb-Girdle Muscular Dystrophies (LGMD)",
+            "---Sarcoglycanopathies"
+          ]
+        },
+        {
+          "heading": "K---",
+          "items": [
+            "Erectile Dysfunction"
+          ]
+        },
+        {
+          "heading": "L---",
+          "items": [
+            "Diabetic Foot",
+            "Decubitus Ulcer",
+            "Buerger Syndrome"
+          ]
+        },
+        {
+          "heading": "M ---",
+          "items": [
+            "Osteoarthritis (Grade III and IV)",
+            "Avascular Necrosis, Aseptic Necrosis",
+            "Temporomandibular joint osteoarthritis"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "II/ AUTOLOGOUS-EXOSOME RELATED APPLICATIONS",
+      "groups": [
+        {
+          "heading": "A Neurological Diseases",
+          "items": [
+            "A1 Migraine"
+          ]
+        },
+        {
+          "heading": "B. Allergic Diseases",
+          "items": [
+            "B1 Allergic Asthma / Allergic Bronchitis",
+            "B2 Eczema",
+            "B3 Urticaria",
+            "B4 Hay Fever"
+          ]
+        },
+        {
+          "heading": "C. Rheumatic Diseases",
+          "items": [
+            "C1 Ankylosing Spondylitis",
+            "C2 Behçet's Disease",
+            "C3 Carpal Tunnel Syndrome",
+            "C4 Fibromyalgia",
+            "C5 Gonarthrosis (Grade I and II)",
+            "Knee / Hip / Shoulder /",
+            "Ankle / Hallux Rigidus",
+            "C6 Hashimoto's Thyroiditis",
+            "C7 Myasthenia Graves",
+            "C8 Rheumatoid Arthritis",
+            "C9 Psoriasis",
+            "C10 Sjögren Syndrome",
+            "C11 SLE - Systemic Lupus Erythematosus",
+            "C12Heel Spur - Plantar Fasciitis",
+            "C13 Ulcerative Colitis"
+          ]
+        }
+      ]
+    }
+  ],
+  "tr": [
+    {
+      "title": "I/ KÖK HÜCRE UYGULAMA LİSTESİ",
+      "groups": [
+        {
+          "heading": "A---",
+          "items": [
+            "Multipl Skleroz (MS)",
+            "Sistemik Lupus Eritematozus (SLE ) - Lupus Miyeliti",
+            "Behçet Hastalığı - Nöro-Behçet",
+            "Nöromiyelitis Optika Spektrum Bozukluğu (NMO) Devic Hastalığı",
+            "MOGAD (MOG Antikor Hastalığı)",
+            "Lyme Hastalığı:"
+          ]
+        },
+        {
+          "heading": "B---",
+          "items": [
+            "Transvers Miyelit",
+            "Guillain-Barré Sendromu Sekelleri"
+          ]
+        },
+        {
+          "heading": "C---",
+          "items": [
+            "Amiyotrofik Lateral Skleroz (ALS)",
+            "Parkinson Hastalığı",
+            "Charcot -Marie- Tooth Hastalığı - \" Peroneal\" Kas Atrofisi"
+          ]
+        },
+        {
+          "heading": "D---",
+          "items": [
+            "Multisistem Atrofi (MSA)",
+            "Friedreich Ataksisi",
+            "Serebellar Ataksi",
+            "Jeneralize Distoni",
+            "Spinal Müsküler Atrofi (SMA)"
+          ]
+        },
+        {
+          "heading": "E---",
+          "items": [
+            "Omurilik Yaralanması",
+            "Hipoksik Beyin Hasarı / Yetişkin",
+            "Serebral Palsi (CP) / Çocuk",
+            "Hemipleji",
+            "Travmatik Beyin Hasarı"
+          ]
+        },
+        {
+          "heading": "F---",
+          "items": [
+            "Periferik Sinir Hasarı",
+            "Polinöropati",
+            "Nörojenik Mesane",
+            "Anozmi – Parozmi",
+            "Trigeminal Nevralji",
+            "İzole Epilepsi",
+            "Senil Tremor / Esansiyel Tremor"
+          ]
+        },
+        {
+          "heading": "G---",
+          "items": [
+            "Sinir hasarına bağlı işitme kaybı.",
+            "Tinnitus (Kulak Çınlaması)"
+          ]
+        },
+        {
+          "heading": "H---",
+          "items": [
+            "Sinir hasarına bağlı görme kaybı.",
+            "Retinitis Pigmentosa (Gece Körlüğü)",
+            "Makula Dejenerasyonu (Sarı Nokta)",
+            "Optik Atrofi",
+            "Optik Nörit"
+          ]
+        },
+        {
+          "heading": "I---",
+          "items": [
+            "Demans",
+            "Frontotemporal demans",
+            "Alzheimer Hastalığı",
+            "Otizm",
+            "Asperger Sendromu",
+            "Dikkat Eksikliği ve Hiperaktivite Bozukluğu (ADHD)"
+          ]
+        },
+        {
+          "heading": "J---",
+          "items": [
+            "Duchenne Müsküler Distrofisi (DMD)",
+            "Limb-Girdle Müsküler Distrofileri (LGMD)",
+            "---Sarkoglikanopatiler"
+          ]
+        },
+        {
+          "heading": "K---",
+          "items": [
+            "Erektil Disfonksiyon"
+          ]
+        },
+        {
+          "heading": "L---",
+          "items": [
+            "Diyabetik Ayak",
+            "Dekübit Ülseri",
+            "Buerger Sendromu"
+          ]
+        },
+        {
+          "heading": "M ---",
+          "items": [
+            "Osteoartrit (Evre III ve IV)",
+            "Avasküler Nekroz, Aseptik Nekroz",
+            "Temporomandibular eklem osteoartriti"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "II/ OTOLOG EKSOZOMLA İLİŞKİLİ UYGULAMALAR",
+      "groups": [
+        {
+          "heading": "A Nörolojik Hastalıklar",
+          "items": [
+            "A1 Migren"
+          ]
+        },
+        {
+          "heading": "B. Alerjik Hastalıklar",
+          "items": [
+            "B1 Alerjik Astım / Alerjik Bronşit",
+            "B2 Egzama",
+            "B3 Ürtiker",
+            "B4 Saman Nezlesi"
+          ]
+        },
+        {
+          "heading": "C. Romatizmal Hastalıklar",
+          "items": [
+            "C1 Ankilozan Spondilit",
+            "C2 Behçet Hastalığı",
+            "C3 Karpal Tünel Sendromu",
+            "C4 Fibromiyalji",
+            "C5 Gonartroz (Evre I ve II)",
+            "Diz / Kalça / Omuz /",
+            "Ayak Bileği / Halluks Rigidus",
+            "C6 Hashimoto Tiroiditi",
+            "C7 Miyasteni Graves",
+            "C8 Romatoid Artrit",
+            "C9 Sedef Hastalığı",
+            "C10 Sjögren Sendromu",
+            "C11 SLE - Sistemik Lupus Eritematozus",
+            "C12Topuk Dikeni - Plantar Fasiit",
+            "C13 Ülseratif Kolit"
+          ]
+        }
+      ]
+    }
+  ],
+  "ru": [
+    {
+      "title": "I/ СПИСОК ПРИМЕНЕНИЙ СТВОЛОВЫХ КЛЕТОК",
+      "groups": [
+        {
+          "heading": "A---",
+          "items": [
+            "Рассеянный склероз (MS)",
+            "Системная красная волчанка (SLE ) - Волчаночный миелит",
+            "Болезнь Бехчета - Нейро-Бехчет",
+            "Расстройство спектра оптиконейромиелита (NMO) Болезнь Девика",
+            "MOGAD (Заболевание, связанное с антителами к MOG)",
+            "Болезнь Лайма:"
+          ]
+        },
+        {
+          "heading": "B---",
+          "items": [
+            "Поперечный миелит",
+            "Последствия синдрома Гийена-Барре"
+          ]
+        },
+        {
+          "heading": "C---",
+          "items": [
+            "Боковой амиотрофический склероз (ALS)",
+            "Болезнь Паркинсона",
+            "Болезнь Шарко -Мари- Тута - \" Перонеальная\" мышечная атрофия"
+          ]
+        },
+        {
+          "heading": "D---",
+          "items": [
+            "Мультисистемная атрофия (MSA)",
+            "Атаксия Фридрейха",
+            "Мозжечковая атаксия",
+            "Генерализованная дистония",
+            "Спинальная мышечная атрофия (SMA)"
+          ]
+        },
+        {
+          "heading": "E---",
+          "items": [
+            "Травма спинного мозга",
+            "Гипоксическое поражение головного мозга / Взрослый",
+            "Детский церебральный паралич (CP) / Ребёнок",
+            "Гемиплегия",
+            "Травматическое повреждение головного мозга"
+          ]
+        },
+        {
+          "heading": "F---",
+          "items": [
+            "Повреждение периферических нервов",
+            "Полинейропатия",
+            "Нейрогенный мочевой пузырь",
+            "Аносмия – Паросмия",
+            "Невралгия тройничного нерва",
+            "Изолированная эпилепсия",
+            "Сенильный тремор / Эссенциальный тремор"
+          ]
+        },
+        {
+          "heading": "G---",
+          "items": [
+            "Потеря слуха вследствие повреждения нервов.",
+            "Тиннитус (Шум в ушах)"
+          ]
+        },
+        {
+          "heading": "H---",
+          "items": [
+            "Потеря зрения вследствие повреждения нервов.",
+            "Пигментный ретинит (Ночная слепота)",
+            "Макулярная дегенерация (Жёлтое пятно)",
+            "Атрофия зрительного нерва",
+            "Неврит зрительного нерва"
+          ]
+        },
+        {
+          "heading": "I---",
+          "items": [
+            "Деменция",
+            "Лобно-височная деменция",
+            "Болезнь Альцгеймера",
+            "Аутизм",
+            "Синдром Аспергера",
+            "Синдром дефицита внимания и гиперактивности (ADHD)"
+          ]
+        },
+        {
+          "heading": "J---",
+          "items": [
+            "Мышечная дистрофия Дюшенна (DMD)",
+            "Конечностно-поясные мышечные дистрофии (LGMD)",
+            "---Саркогликанопатии"
+          ]
+        },
+        {
+          "heading": "K---",
+          "items": [
+            "Эректильная дисфункция"
+          ]
+        },
+        {
+          "heading": "L---",
+          "items": [
+            "Диабетическая стопа",
+            "Пролежневая язва",
+            "Синдром Бюргера"
+          ]
+        },
+        {
+          "heading": "M ---",
+          "items": [
+            "Остеоартрит (Степень III и IV)",
+            "Аваскулярный некроз, Асептический некроз",
+            "Остеоартрит височно-нижнечелюстного сустава"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "II/ ПРИМЕНЕНИЯ, СВЯЗАННЫЕ С АУТОЛОГИЧНЫМИ ЭКЗОСОМАМИ",
+      "groups": [
+        {
+          "heading": "A Неврологические заболевания",
+          "items": [
+            "A1 Мигрень"
+          ]
+        },
+        {
+          "heading": "B. Аллергические заболевания",
+          "items": [
+            "B1 Аллергическая астма / Аллергический бронхит",
+            "B2 Экзема",
+            "B3 Крапивница",
+            "B4 Сенная лихорадка"
+          ]
+        },
+        {
+          "heading": "C. Ревматические заболевания",
+          "items": [
+            "C1 Анкилозирующий спондилит",
+            "C2 Болезнь Бехчета",
+            "C3 Синдром запястного канала",
+            "C4 Фибромиалгия",
+            "C5 Гонартроз (Степень I и II)",
+            "Колено / Тазобедренный сустав / Плечо /",
+            "Голеностопный сустав / Ригидность большого пальца стопы",
+            "C6 Тиреоидит Хашимото",
+            "C7 Миастения Грейвса",
+            "C8 Ревматоидный артрит",
+            "C9 Псориаз",
+            "C10 Синдром Шегрена",
+            "C11 SLE - Системная красная волчанка",
+            "C12Пяточная шпора - Плантарный фасциит",
+            "C13 Язвенный колит"
+          ]
+        }
+      ]
+    }
+  ],
+  "az": [
+    {
+      "title": "I/ KÖK HÜCEYRƏ TƏTBİQLƏRİ SİYAHISI",
+      "groups": [
+        {
+          "heading": "A---",
+          "items": [
+            "Dağınıq Skleroz (MS)",
+            "Sistemli Qırmızı Qurdeşənəyi (SLE ) - Lupus Miyeliti",
+            "Behçet Xəstəliyi - Neyro-Behçet",
+            "Neyromiyelit Optika Spektr Pozuntusu (NMO) Devik Xəstəliyi",
+            "MOGAD (MOG Anticisim Xəstəliyi)",
+            "Laym Xəstəliyi:"
+          ]
+        },
+        {
+          "heading": "B---",
+          "items": [
+            "Transvers Miyelit",
+            "Giyen-Barre Sindromunun Qalıq Əlamətləri"
+          ]
+        },
+        {
+          "heading": "C---",
+          "items": [
+            "Amiotrofik Lateral Skleroz (ALS)",
+            "Parkinson Xəstəliyi",
+            "Şarko -Mari- Tut Xəstəliyi - \" Peroneal\" Əzələ Atrofiyası"
+          ]
+        },
+        {
+          "heading": "D---",
+          "items": [
+            "Multisistem Atrofiya (MSA)",
+            "Fridreyx Ataksiyası",
+            "Serebellar Ataksiya",
+            "Generalizə Olunmuş Distoniya",
+            "Spinal Əzələ Atrofiyası (SMA)"
+          ]
+        },
+        {
+          "heading": "E---",
+          "items": [
+            "Onurğa Beyni Zədələnməsi",
+            "Hipoksik Beyin Zədələnməsi / Yetkin",
+            "Serebral İflic (CP) / Uşaq",
+            "Hemiplegiya",
+            "Travmatik Beyin Zədələnməsi"
+          ]
+        },
+        {
+          "heading": "F---",
+          "items": [
+            "Periferik Sinir Zədələnməsi",
+            "Polineyropatiya",
+            "Neyrogen Sidik Kisəsi",
+            "Anosmiya – Parosmiya",
+            "Trigeminal Nevralgiya",
+            "İzolə Olunmuş Epilepsiya",
+            "Senil Tremor / Essensial Tremor"
+          ]
+        },
+        {
+          "heading": "G---",
+          "items": [
+            "Sinir zədələnməsinə bağlı eşitmə itkisi.",
+            "Tinnitus (Qulaqlarda Küylənmə)"
+          ]
+        },
+        {
+          "heading": "H---",
+          "items": [
+            "Sinir zədələnməsinə bağlı görmə itkisi.",
+            "Piqmentli Retinit (Gecə Korluğu)",
+            "Makulyar Degenerasiya (Sarı Ləkə)",
+            "Optik Atrofiya",
+            "Optik Nevrit"
+          ]
+        },
+        {
+          "heading": "I---",
+          "items": [
+            "Demensiya",
+            "Frontotemporal demensiya",
+            "Altsheymer Xəstəliyi",
+            "Autizm",
+            "Asperger Sindromu",
+            "Diqqət Çatışmazlığı və Hiperaktivlik Pozuntusu (ADHD)"
+          ]
+        },
+        {
+          "heading": "J---",
+          "items": [
+            "Düşenn Əzələ Distrofiyası (DMD)",
+            "Ətraf-Qurşaq Əzələ Distrofiyaları (LGMD)",
+            "---Sarkoqlikanopatiyalar"
+          ]
+        },
+        {
+          "heading": "K---",
+          "items": [
+            "Erektil Disfunksiya"
+          ]
+        },
+        {
+          "heading": "L---",
+          "items": [
+            "Diabetik Ayaq",
+            "Dekubitus Xorası",
+            "Bürger Sindromu"
+          ]
+        },
+        {
+          "heading": "M ---",
+          "items": [
+            "Osteoartrit (Dərəcə III və IV)",
+            "Avaskulyar Nekroz, Aseptik Nekroz",
+            "Temporomandibulyar oynaq osteoartriti"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "II/ AUTOLOJİ EKZOSOMLA ƏLAQƏLİ TƏTBİQLƏR",
+      "groups": [
+        {
+          "heading": "A Nevroloji Xəstəliklər",
+          "items": [
+            "A1 Miqren"
+          ]
+        },
+        {
+          "heading": "B. Allergik Xəstəliklər",
+          "items": [
+            "B1 Allergik Astma / Allergik Bronxit",
+            "B2 Ekzema",
+            "B3 Övrə",
+            "B4 Ot Qızdırması"
+          ]
+        },
+        {
+          "heading": "C. Revmatik Xəstəliklər",
+          "items": [
+            "C1 Ankilozlaşdırıcı Spondilit",
+            "C2 Behçet Xəstəliyi",
+            "C3 Karpal Tunel Sindromu",
+            "C4 Fibromialgiya",
+            "C5 Qonartroz (Dərəcə I və II)",
+            "Diz / Bud-Çanaq / Çiyin /",
+            "Ayaq Biləyi / Halluks Rigidus",
+            "C6 Haşimoto Tireoiditi",
+            "C7 Miasteniya Qreyvs",
+            "C8 Revmatoid Artrit",
+            "C9 Psoriaz",
+            "C10 Şeqren Sindromu",
+            "C11 SLE - Sistemli Qırmızı Qurdeşənəyi",
+            "C12Daban Mahmızı - Plantar Fassiit",
+            "C13 Xoralı Kolit"
+          ]
+        }
+      ]
+    }
+  ],
+  "ka": [
+    {
+      "title": "I/ ღეროვანი უჯრედების გამოყენების სია",
+      "groups": [
+        {
+          "heading": "A---",
+          "items": [
+            "გაფანტული სკლეროზი (MS)",
+            "სისტემური წითელი მგლურა (SLE ) - მგლურას მიელიტი",
+            "ბეჰჩეტის დაავადება - ნეირო-ბეჰჩეტი",
+            "ოპტიკური ნეირომიელიტის სპექტრის დარღვევა (NMO) დევიკის დაავადება",
+            "MOGAD (MOG ანტისხეულებთან დაკავშირებული დაავადება)",
+            "ლაიმის დაავადება:"
+          ]
+        },
+        {
+          "heading": "B---",
+          "items": [
+            "განივი მიელიტი",
+            "გიიენ-ბარეს სინდრომის ნარჩენი მოვლენები"
+          ]
+        },
+        {
+          "heading": "C---",
+          "items": [
+            "ამიოტროფული ლატერალური სკლეროზი (ALS)",
+            "პარკინსონის დაავადება",
+            "შარკო -მარი- ტუტის დაავადება - \" პერონეული\" კუნთოვანი ატროფია"
+          ]
+        },
+        {
+          "heading": "D---",
+          "items": [
+            "მულტისისტემური ატროფია (MSA)",
+            "ფრიდრეიხის ატაქსია",
+            "ნათხემის ატაქსია",
+            "გენერალიზებული დისტონია",
+            "სპინალური კუნთოვანი ატროფია (SMA)"
+          ]
+        },
+        {
+          "heading": "E---",
+          "items": [
+            "ზურგის ტვინის დაზიანება",
+            "თავის ტვინის ჰიპოქსიური დაზიანება / ზრდასრული",
+            "ცერებრული დამბლა (CP) / ბავშვი",
+            "ჰემიპლეგია",
+            "თავის ტვინის ტრავმული დაზიანება"
+          ]
+        },
+        {
+          "heading": "F---",
+          "items": [
+            "პერიფერიული ნერვების დაზიანება",
+            "პოლინეიროპათია",
+            "ნეიროგენული შარდის ბუშტი",
+            "ანოსმია – პაროსმია",
+            "სამწვერა ნერვის ნევრალგია",
+            "იზოლირებული ეპილეფსია",
+            "სენილური ტრემორი / ესენციური ტრემორი"
+          ]
+        },
+        {
+          "heading": "G---",
+          "items": [
+            "სმენის დაკარგვა ნერვის დაზიანების გამო.",
+            "ტინიტუსი (ყურებში ხმაური)"
+          ]
+        },
+        {
+          "heading": "H---",
+          "items": [
+            "მხედველობის დაკარგვა ნერვის დაზიანების გამო.",
+            "პიგმენტური რეტინიტი (ღამის სიბრმავე)",
+            "მაკულარული დეგენერაცია (ყვითელი ლაქა)",
+            "მხედველობის ნერვის ატროფია",
+            "მხედველობის ნერვის ნევრიტი"
+          ]
+        },
+        {
+          "heading": "I---",
+          "items": [
+            "დემენცია",
+            "ფრონტოტემპორალური დემენცია",
+            "ალცჰაიმერის დაავადება",
+            "აუტიზმი",
+            "ასპერგერის სინდრომი",
+            "ყურადღების დეფიციტისა და ჰიპერაქტივობის დარღვევა (ADHD)"
+          ]
+        },
+        {
+          "heading": "J---",
+          "items": [
+            "დიუშენის კუნთოვანი დისტროფია (DMD)",
+            "კიდურ-სარტყლის კუნთოვანი დისტროფიები (LGMD)",
+            "---სარკოგლიკანოპათიები"
+          ]
+        },
+        {
+          "heading": "K---",
+          "items": [
+            "ერექციული დისფუნქცია"
+          ]
+        },
+        {
+          "heading": "L---",
+          "items": [
+            "დიაბეტური ტერფი",
+            "ნაწოლითი წყლული",
+            "ბიურგერის სინდრომი"
+          ]
+        },
+        {
+          "heading": "M ---",
+          "items": [
+            "ოსტეოართრიტი (III და IV ხარისხი)",
+            "ავასკულარული ნეკროზი, ასეპტიკური ნეკროზი",
+            "საფეთქელ-ქვედაყბის სახსრის ოსტეოართრიტი"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "II/ აუტოლოგიურ ეგზოსომებთან დაკავშირებული გამოყენებები",
+      "groups": [
+        {
+          "heading": "A ნევროლოგიური დაავადებები",
+          "items": [
+            "A1 შაკიკი"
+          ]
+        },
+        {
+          "heading": "B. ალერგიული დაავადებები",
+          "items": [
+            "B1 ალერგიული ასთმა / ალერგიული ბრონქიტი",
+            "B2 ეგზემა",
+            "B3 ჭინჭრის ციება",
+            "B4 თივის ცხელება"
+          ]
+        },
+        {
+          "heading": "C. რევმატული დაავადებები",
+          "items": [
+            "C1 მაანკილოზებელი სპონდილიტი",
+            "C2 ბეჰჩეტის დაავადება",
+            "C3 კარპალური გვირაბის სინდრომი",
+            "C4 ფიბრომიალგია",
+            "C5 გონართროზი (I და II ხარისხი)",
+            "მუხლი / მენჯ-ბარძაყი / მხარი /",
+            "კოჭ-წვივის სახსარი / ტერფის დიდი თითის რიგიდობა",
+            "C6 ჰაშიმოტოს თირეოიდიტი",
+            "C7 მიასთენია გრეივსი",
+            "C8 რევმატოიდული ართრიტი",
+            "C9 ფსორიაზი",
+            "C10 შოგრენის სინდრომი",
+            "C11 SLE - სისტემური წითელი მგლურა",
+            "C12ქუსლის დეზი - პლანტარული ფასციიტი",
+            "C13 წყლულოვანი კოლიტი"
+          ]
+        }
+      ]
+    }
+  ]
+}

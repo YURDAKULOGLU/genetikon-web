@@ -13,7 +13,7 @@ export type LT = {
   az?: string;
 };
 export type ContentItem = { title: LT; body: LT };
-export type ContentSection = { heading: LT; intro?: LT; items: ContentItem[] };
+export type ContentSection = { id?: string; heading: LT; intro?: LT; items: ContentItem[] };
 export type DepartmentContent = {
   slug: string;
   title: LT;
@@ -393,6 +393,7 @@ export const departmentsContent: Record<string, DepartmentContent> =
         ]
       },
       {
+        "id": "application-areas",
         "heading": {
           "en": "Application Areas",
           "tr": "Uygulama Alanları"

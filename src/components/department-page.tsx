@@ -14,6 +14,7 @@ import { siteUrl, absoluteSiteUrl } from "@/lib/site-environment";
 import { MedicalDisclaimer } from "./medical-disclaimer";
 import { DepartmentSwitcher } from "./department-switcher";
 import { ContactCta } from "./contact-cta";
+import { StemCellApplicationLists } from "./stem-cell-application-lists";
 
 function DepartmentJsonLd({
   slug,
@@ -131,6 +132,9 @@ export async function DepartmentPage({
                   </p>
                 </div>
               ))}
+              {slug === "stem-cell-therapy" && section.id === "application-areas" && (
+                <StemCellApplicationLists locale={locale} />
+              )}
             </div>
           </section>
         ))}
