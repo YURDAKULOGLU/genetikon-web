@@ -46,7 +46,7 @@ jobs:
           PLESK_DEPLOY_WEBHOOK: ${{ secrets.PLESK_DEPLOY_WEBHOOK }}
         run: |
           if [ -n "$PLESK_DEPLOY_WEBHOOK" ]; then
-            curl --fail --silent --show-error --max-time 120 --request POST "$PLESK_DEPLOY_WEBHOOK"
+            curl --fail --silent --show-error --max-time 120 --data '' "$PLESK_DEPLOY_WEBHOOK"
           else
             echo "Plesk webhook is not configured; verified hosting branch is ready."
           fi
