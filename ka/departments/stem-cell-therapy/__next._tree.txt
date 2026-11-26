@@ -1,0 +1,10 @@
+:HL["/_next/static/media/4da3161b738b07dd-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/af4bf8399d1aacdf-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/d9fef5bf2f64cf9a-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/de42cfb9a3b980ae-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/css/dfa349c63b5596fc.css","style"]
+4:[["children",{"s":"__PAGE__","h":160}]]
+3:[["children",{"s":"stem-cell-therapy","h":96,"c":"$Q4"}]]
+2:[["children",{"s":"departments","h":64,"c":"$Q3"}]]
+1:[["children",{"s":{"n":"locale","t":"d","k":"ka","s":["_not-found","_global-error","apple-icon.png","icon.png","manifest.webmanifest","robots.txt","sitemap.xml"]},"h":48,"c":"$Q2"}]]
+0:{"b":"ExP3Gd8I-mPcOdYxAYv2O","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
