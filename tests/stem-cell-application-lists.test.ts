@@ -3,11 +3,12 @@ import lists from "../src/lib/content/stem-cell-application-lists.json";
 import source from "./fixtures/stem-cell-source-paragraphs.json";
 
 describe("owner-supplied application documents", () => {
-  it("preserves every original DOCX paragraph and its order", () => {
+  it("preserves every DOCX paragraph and its order after approved typography cleanup", () => {
+    const normalize = (text: string) => text.replace(/\s*-{3,}\s*/g, "").replace(/^(C12)(?=\S)/, "$1 ").toLowerCase();
     expect(lists.en.map(document => [
       document.title,
       ...document.groups.flatMap(group => [group.heading, ...group.items]),
-    ])).toEqual(source);
+    ].map(normalize))).toEqual(source.map(document => document.map(normalize)));
   });
 
   for (const locale of ["tr", "ru", "ka", "az"] as const) {

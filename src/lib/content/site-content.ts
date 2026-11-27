@@ -379,16 +379,6 @@ export const departmentsContent: Record<string, DepartmentContent> =
               "en": "Work with nano-medicine and exosome-based methods.",
               "tr": "Nano-tıp ve ekzozom temelli yöntemlerle çalışır."
             }
-          },
-          {
-            "title": {
-              "en": "Where our laboratory sits",
-              "tr": "Laboratuvarımızın yeri"
-            },
-            "body": {
-              "en": "Within this framework, the Stem Cell Therapy Laboratory works across the regenerative-medicine, stem cell and exosome/nano-medicine categories, under a single institutional standard.",
-              "tr": "Bu çerçeve içinde Kök Hücre Tedavi Laboratuvarı; rejeneratif tıp, kök hücre ve ekzozom/nano-tıp kategorilerinde, tek bir kurumsal standart altında çalışır."
-            }
           }
         ]
       },

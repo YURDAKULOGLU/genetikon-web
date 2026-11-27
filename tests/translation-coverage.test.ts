@@ -15,9 +15,9 @@ const numbers = (text: string) => (text.match(/\d+(?:[,.]\d+)*/g) ?? [])
 
 describe("complete preview translations without changing clinical figures", () => {
   for (const locale of ["ru", "ka", "az"] as const) {
-    it(`${locale}: all 302 fields are present and displayed`, () => {
+    it(`${locale}: all 300 fields are present and displayed`, () => {
       const dictionary = JSON.parse(readFileSync(new URL(`../src/lib/content/translations/${locale}.json`, import.meta.url), "utf8"));
-      expect(source).toHaveLength(302);
+      expect(source).toHaveLength(300);
       expect(Object.keys(dictionary).sort()).toEqual(source.map(([key]) => key).sort());
       for (const [key, value] of source) {
         expect(value[locale]?.trim(), key).toBeTruthy();

@@ -61,6 +61,36 @@ try {
     const response = await fetch(base + path);
     assert.equal(response.status, 200, `Missing local destination: ${path}`);
   }
+  // Real touch gestures catch smooth-scroll handlers swallowing nested swipes.
+  for (const locale of locales) {
+    const context = await browser.newContext({ viewport:{width:390,height:844}, isMobile:true, hasTouch:true, deviceScaleFactor:1 });
+    const mobile = await context.newPage();
+    await mobile.goto(`${base}/${locale}/departments/stem-cell-therapy/`, {waitUntil:'networkidle'});
+    const strip = mobile.locator('[data-department-scroll]');
+    await strip.scrollIntoViewIfNeeded();
+    const box = await strip.boundingBox();
+    const cdp = await context.newCDPSession(mobile);
+    const swipe = async (from, to) => {
+      const y = box.y + box.height / 2;
+      await cdp.send('Input.dispatchTouchEvent', {type:'touchStart', touchPoints:[{x:from,y}]});
+      for (let step=1; step<=12; step++) {
+        await cdp.send('Input.dispatchTouchEvent', {type:'touchMove', touchPoints:[{x:from+(to-from)*step/12,y}]});
+        await mobile.evaluate(() => new Promise(resolve => requestAnimationFrame(resolve)));
+      }
+      await cdp.send('Input.dispatchTouchEvent', {type:'touchEnd', touchPoints:[]});
+      await mobile.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
+    };
+    await swipe(350,40);
+    const afterLeft = await strip.evaluate(el => el.scrollLeft);
+    assert(afterLeft > 40, `${locale}: left swipe did not scroll department bar`);
+    await swipe(40,350);
+    assert(await strip.evaluate(el => el.scrollLeft) < afterLeft - 30, `${locale}: right swipe did not scroll department bar`);
+    assert(await mobile.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
+    assert(!/---/.test(await mobile.locator('[data-application-list]').allTextContents().then(parts => parts.join(' '))));
+    await strip.locator('a').last().click();
+    await mobile.waitForURL(`**/${locale}/departments/ivf-center/`);
+    await context.close();
+  }
   const sitemap = await readFile(join(root, 'sitemap.xml'), 'utf8');
   assert.equal((sitemap.match(/<loc>/g) || []).length, 55);
   assert(!sitemap.includes('yurdakul.net.tr'));

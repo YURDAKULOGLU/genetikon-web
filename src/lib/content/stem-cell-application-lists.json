@@ -1,10 +1,10 @@
 {
   "en": [
     {
-      "title": "I/ STEM CELL APPLICATION LIST",
+      "title": "I/ Stem cell application list",
       "groups": [
         {
-          "heading": "A---",
+          "heading": "A",
           "items": [
             "Multiple Sclerosis (MS)",
             "Systemic Lupus Erythematosus (SLE ) - Lupus Myelitis",
@@ -15,14 +15,14 @@
           ]
         },
         {
-          "heading": "B---",
+          "heading": "B",
           "items": [
             "Transverse Myelitis",
             "Guillain-Barré Syndrome Sequelae"
           ]
         },
         {
-          "heading": "C---",
+          "heading": "C",
           "items": [
             "Amyotrophic Lateral Sclerosis (ALS)",
             "Parkinson's Disease",
@@ -30,7 +30,7 @@
           ]
         },
         {
-          "heading": "D---",
+          "heading": "D",
           "items": [
             "Multisystem Atrophy (MSA)",
             "Friedreich's Ataxia",
@@ -40,7 +40,7 @@
           ]
         },
         {
-          "heading": "E---",
+          "heading": "E",
           "items": [
             "Spinal Cord Injury",
             "Hypoxic Brain Injury / Adult",
@@ -50,7 +50,7 @@
           ]
         },
         {
-          "heading": "F---",
+          "heading": "F",
           "items": [
             "Peripheral Nerve Damage",
             "Polyneuropathy",
@@ -62,14 +62,14 @@
           ]
         },
         {
-          "heading": "G---",
+          "heading": "G",
           "items": [
             "Hearing loss due to nerve damage.",
             "Tinnitus (Ringing in the Ears)"
           ]
         },
         {
-          "heading": "H---",
+          "heading": "H",
           "items": [
             "Vision loss due to nerve damage.",
             "Retinitis Pigmentosa (Night Blindness)",
@@ -79,7 +79,7 @@
           ]
         },
         {
-          "heading": "I---",
+          "heading": "I",
           "items": [
             "Dementia",
             "Frontotemporal dementia",
@@ -90,21 +90,21 @@
           ]
         },
         {
-          "heading": "J---",
+          "heading": "J",
           "items": [
             "Duchenne Muscular Dystrophy (DMD)",
             "Limb-Girdle Muscular Dystrophies (LGMD)",
-            "---Sarcoglycanopathies"
+            "Sarcoglycanopathies"
           ]
         },
         {
-          "heading": "K---",
+          "heading": "K",
           "items": [
             "Erectile Dysfunction"
           ]
         },
         {
-          "heading": "L---",
+          "heading": "L",
           "items": [
             "Diabetic Foot",
             "Decubitus Ulcer",
@@ -112,7 +112,7 @@
           ]
         },
         {
-          "heading": "M ---",
+          "heading": "M",
           "items": [
             "Osteoarthritis (Grade III and IV)",
             "Avascular Necrosis, Aseptic Necrosis",
@@ -122,7 +122,7 @@
       ]
     },
     {
-      "title": "II/ AUTOLOGOUS-EXOSOME RELATED APPLICATIONS",
+      "title": "II/ Autologous-exosome related applications",
       "groups": [
         {
           "heading": "A Neurological Diseases",
@@ -155,7 +155,7 @@
             "C9 Psoriasis",
             "C10 Sjögren Syndrome",
             "C11 SLE - Systemic Lupus Erythematosus",
-            "C12Heel Spur - Plantar Fasciitis",
+            "C12 Heel Spur - Plantar Fasciitis",
             "C13 Ulcerative Colitis"
           ]
         }
@@ -164,10 +164,10 @@
   ],
   "tr": [
     {
-      "title": "I/ KÖK HÜCRE UYGULAMA LİSTESİ",
+      "title": "I/ Kök hücre uygulama listesi",
       "groups": [
         {
-          "heading": "A---",
+          "heading": "A",
           "items": [
             "Multipl Skleroz (MS)",
             "Sistemik Lupus Eritematozus (SLE ) - Lupus Miyeliti",
@@ -178,14 +178,14 @@
           ]
         },
         {
-          "heading": "B---",
+          "heading": "B",
           "items": [
             "Transvers Miyelit",
             "Guillain-Barré Sendromu Sekelleri"
           ]
         },
         {
-          "heading": "C---",
+          "heading": "C",
           "items": [
             "Amiyotrofik Lateral Skleroz (ALS)",
             "Parkinson Hastalığı",
@@ -193,7 +193,7 @@
           ]
         },
         {
-          "heading": "D---",
+          "heading": "D",
           "items": [
             "Multisistem Atrofi (MSA)",
             "Friedreich Ataksisi",
@@ -203,7 +203,7 @@
           ]
         },
         {
-          "heading": "E---",
+          "heading": "E",
           "items": [
             "Omurilik Yaralanması",
             "Hipoksik Beyin Hasarı / Yetişkin",
@@ -213,7 +213,7 @@
           ]
         },
         {
-          "heading": "F---",
+          "heading": "F",
           "items": [
             "Periferik Sinir Hasarı",
             "Polinöropati",
@@ -225,14 +225,14 @@
           ]
         },
         {
-          "heading": "G---",
+          "heading": "G",
           "items": [
             "Sinir hasarına bağlı işitme kaybı.",
-            "Tinnitus (Kulak Çınlaması)"
+            "Tinnitus (kulak çınlaması)"
           ]
         },
         {
-          "heading": "H---",
+          "heading": "H",
           "items": [
             "Sinir hasarına bağlı görme kaybı.",
             "Retinitis Pigmentosa (Gece Körlüğü)",
@@ -242,7 +242,7 @@
           ]
         },
         {
-          "heading": "I---",
+          "heading": "I",
           "items": [
             "Demans",
             "Frontotemporal demans",
@@ -253,21 +253,21 @@
           ]
         },
         {
-          "heading": "J---",
+          "heading": "J",
           "items": [
             "Duchenne Müsküler Distrofisi (DMD)",
             "Limb-Girdle Müsküler Distrofileri (LGMD)",
-            "---Sarkoglikanopatiler"
+            "Sarkoglikanopatiler"
           ]
         },
         {
-          "heading": "K---",
+          "heading": "K",
           "items": [
             "Erektil Disfonksiyon"
           ]
         },
         {
-          "heading": "L---",
+          "heading": "L",
           "items": [
             "Diyabetik Ayak",
             "Dekübit Ülseri",
@@ -275,7 +275,7 @@
           ]
         },
         {
-          "heading": "M ---",
+          "heading": "M",
           "items": [
             "Osteoartrit (Evre III ve IV)",
             "Avasküler Nekroz, Aseptik Nekroz",
@@ -285,7 +285,7 @@
       ]
     },
     {
-      "title": "II/ OTOLOG EKSOZOMLA İLİŞKİLİ UYGULAMALAR",
+      "title": "II/ Otolog eksozomla ilişkili uygulamalar",
       "groups": [
         {
           "heading": "A Nörolojik Hastalıklar",
@@ -318,7 +318,7 @@
             "C9 Sedef Hastalığı",
             "C10 Sjögren Sendromu",
             "C11 SLE - Sistemik Lupus Eritematozus",
-            "C12Topuk Dikeni - Plantar Fasiit",
+            "C12 Topuk Dikeni - Plantar Fasiit",
             "C13 Ülseratif Kolit"
           ]
         }
@@ -327,10 +327,10 @@
   ],
   "ru": [
     {
-      "title": "I/ СПИСОК ПРИМЕНЕНИЙ СТВОЛОВЫХ КЛЕТОК",
+      "title": "I/ Список применений стволовых клеток",
       "groups": [
         {
-          "heading": "A---",
+          "heading": "A",
           "items": [
             "Рассеянный склероз (MS)",
             "Системная красная волчанка (SLE ) - Волчаночный миелит",
@@ -341,14 +341,14 @@
           ]
         },
         {
-          "heading": "B---",
+          "heading": "B",
           "items": [
             "Поперечный миелит",
             "Последствия синдрома Гийена-Барре"
           ]
         },
         {
-          "heading": "C---",
+          "heading": "C",
           "items": [
             "Боковой амиотрофический склероз (ALS)",
             "Болезнь Паркинсона",
@@ -356,7 +356,7 @@
           ]
         },
         {
-          "heading": "D---",
+          "heading": "D",
           "items": [
             "Мультисистемная атрофия (MSA)",
             "Атаксия Фридрейха",
@@ -366,7 +366,7 @@
           ]
         },
         {
-          "heading": "E---",
+          "heading": "E",
           "items": [
             "Травма спинного мозга",
             "Гипоксическое поражение головного мозга / Взрослый",
@@ -376,7 +376,7 @@
           ]
         },
         {
-          "heading": "F---",
+          "heading": "F",
           "items": [
             "Повреждение периферических нервов",
             "Полинейропатия",
@@ -388,14 +388,14 @@
           ]
         },
         {
-          "heading": "G---",
+          "heading": "G",
           "items": [
             "Потеря слуха вследствие повреждения нервов.",
             "Тиннитус (Шум в ушах)"
           ]
         },
         {
-          "heading": "H---",
+          "heading": "H",
           "items": [
             "Потеря зрения вследствие повреждения нервов.",
             "Пигментный ретинит (Ночная слепота)",
@@ -405,7 +405,7 @@
           ]
         },
         {
-          "heading": "I---",
+          "heading": "I",
           "items": [
             "Деменция",
             "Лобно-височная деменция",
@@ -416,21 +416,21 @@
           ]
         },
         {
-          "heading": "J---",
+          "heading": "J",
           "items": [
             "Мышечная дистрофия Дюшенна (DMD)",
             "Конечностно-поясные мышечные дистрофии (LGMD)",
-            "---Саркогликанопатии"
+            "Саркогликанопатии"
           ]
         },
         {
-          "heading": "K---",
+          "heading": "K",
           "items": [
             "Эректильная дисфункция"
           ]
         },
         {
-          "heading": "L---",
+          "heading": "L",
           "items": [
             "Диабетическая стопа",
             "Пролежневая язва",
@@ -438,7 +438,7 @@
           ]
         },
         {
-          "heading": "M ---",
+          "heading": "M",
           "items": [
             "Остеоартрит (Степень III и IV)",
             "Аваскулярный некроз, Асептический некроз",
@@ -448,7 +448,7 @@
       ]
     },
     {
-      "title": "II/ ПРИМЕНЕНИЯ, СВЯЗАННЫЕ С АУТОЛОГИЧНЫМИ ЭКЗОСОМАМИ",
+      "title": "II/ Применения, связанные с аутологичными экзосомами",
       "groups": [
         {
           "heading": "A Неврологические заболевания",
@@ -481,7 +481,7 @@
             "C9 Псориаз",
             "C10 Синдром Шегрена",
             "C11 SLE - Системная красная волчанка",
-            "C12Пяточная шпора - Плантарный фасциит",
+            "C12 Пяточная шпора - Плантарный фасциит",
             "C13 Язвенный колит"
           ]
         }
@@ -490,10 +490,10 @@
   ],
   "az": [
     {
-      "title": "I/ KÖK HÜCEYRƏ TƏTBİQLƏRİ SİYAHISI",
+      "title": "I/ Kök hüceyrə tətbiqləri siyahısı",
       "groups": [
         {
-          "heading": "A---",
+          "heading": "A",
           "items": [
             "Dağınıq Skleroz (MS)",
             "Sistemli Qırmızı Qurdeşənəyi (SLE ) - Lupus Miyeliti",
@@ -504,14 +504,14 @@
           ]
         },
         {
-          "heading": "B---",
+          "heading": "B",
           "items": [
             "Transvers Miyelit",
             "Giyen-Barre Sindromunun Qalıq Əlamətləri"
           ]
         },
         {
-          "heading": "C---",
+          "heading": "C",
           "items": [
             "Amiotrofik Lateral Skleroz (ALS)",
             "Parkinson Xəstəliyi",
@@ -519,7 +519,7 @@
           ]
         },
         {
-          "heading": "D---",
+          "heading": "D",
           "items": [
             "Multisistem Atrofiya (MSA)",
             "Fridreyx Ataksiyası",
@@ -529,7 +529,7 @@
           ]
         },
         {
-          "heading": "E---",
+          "heading": "E",
           "items": [
             "Onurğa Beyni Zədələnməsi",
             "Hipoksik Beyin Zədələnməsi / Yetkin",
@@ -539,7 +539,7 @@
           ]
         },
         {
-          "heading": "F---",
+          "heading": "F",
           "items": [
             "Periferik Sinir Zədələnməsi",
             "Polineyropatiya",
@@ -551,14 +551,14 @@
           ]
         },
         {
-          "heading": "G---",
+          "heading": "G",
           "items": [
             "Sinir zədələnməsinə bağlı eşitmə itkisi.",
-            "Tinnitus (Qulaqlarda Küylənmə)"
+            "Tinnitus (qulaqlarda küylənmə)"
           ]
         },
         {
-          "heading": "H---",
+          "heading": "H",
           "items": [
             "Sinir zədələnməsinə bağlı görmə itkisi.",
             "Piqmentli Retinit (Gecə Korluğu)",
@@ -568,7 +568,7 @@
           ]
         },
         {
-          "heading": "I---",
+          "heading": "I",
           "items": [
             "Demensiya",
             "Frontotemporal demensiya",
@@ -579,21 +579,21 @@
           ]
         },
         {
-          "heading": "J---",
+          "heading": "J",
           "items": [
             "Düşenn Əzələ Distrofiyası (DMD)",
             "Ətraf-Qurşaq Əzələ Distrofiyaları (LGMD)",
-            "---Sarkoqlikanopatiyalar"
+            "Sarkoqlikanopatiyalar"
           ]
         },
         {
-          "heading": "K---",
+          "heading": "K",
           "items": [
             "Erektil Disfunksiya"
           ]
         },
         {
-          "heading": "L---",
+          "heading": "L",
           "items": [
             "Diabetik Ayaq",
             "Dekubitus Xorası",
@@ -601,7 +601,7 @@
           ]
         },
         {
-          "heading": "M ---",
+          "heading": "M",
           "items": [
             "Osteoartrit (Dərəcə III və IV)",
             "Avaskulyar Nekroz, Aseptik Nekroz",
@@ -611,7 +611,7 @@
       ]
     },
     {
-      "title": "II/ AUTOLOJİ EKZOSOMLA ƏLAQƏLİ TƏTBİQLƏR",
+      "title": "II/ Autoloji ekzosomla əlaqəli tətbiqlər",
       "groups": [
         {
           "heading": "A Nevroloji Xəstəliklər",
@@ -644,7 +644,7 @@
             "C9 Psoriaz",
             "C10 Şeqren Sindromu",
             "C11 SLE - Sistemli Qırmızı Qurdeşənəyi",
-            "C12Daban Mahmızı - Plantar Fassiit",
+            "C12 Daban Mahmızı - Plantar Fassiit",
             "C13 Xoralı Kolit"
           ]
         }
@@ -656,7 +656,7 @@
       "title": "I/ ღეროვანი უჯრედების გამოყენების სია",
       "groups": [
         {
-          "heading": "A---",
+          "heading": "A",
           "items": [
             "გაფანტული სკლეროზი (MS)",
             "სისტემური წითელი მგლურა (SLE ) - მგლურას მიელიტი",
@@ -667,14 +667,14 @@
           ]
         },
         {
-          "heading": "B---",
+          "heading": "B",
           "items": [
             "განივი მიელიტი",
             "გიიენ-ბარეს სინდრომის ნარჩენი მოვლენები"
           ]
         },
         {
-          "heading": "C---",
+          "heading": "C",
           "items": [
             "ამიოტროფული ლატერალური სკლეროზი (ALS)",
             "პარკინსონის დაავადება",
@@ -682,7 +682,7 @@
           ]
         },
         {
-          "heading": "D---",
+          "heading": "D",
           "items": [
             "მულტისისტემური ატროფია (MSA)",
             "ფრიდრეიხის ატაქსია",
@@ -692,7 +692,7 @@
           ]
         },
         {
-          "heading": "E---",
+          "heading": "E",
           "items": [
             "ზურგის ტვინის დაზიანება",
             "თავის ტვინის ჰიპოქსიური დაზიანება / ზრდასრული",
@@ -702,7 +702,7 @@
           ]
         },
         {
-          "heading": "F---",
+          "heading": "F",
           "items": [
             "პერიფერიული ნერვების დაზიანება",
             "პოლინეიროპათია",
@@ -714,14 +714,14 @@
           ]
         },
         {
-          "heading": "G---",
+          "heading": "G",
           "items": [
             "სმენის დაკარგვა ნერვის დაზიანების გამო.",
             "ტინიტუსი (ყურებში ხმაური)"
           ]
         },
         {
-          "heading": "H---",
+          "heading": "H",
           "items": [
             "მხედველობის დაკარგვა ნერვის დაზიანების გამო.",
             "პიგმენტური რეტინიტი (ღამის სიბრმავე)",
@@ -731,7 +731,7 @@
           ]
         },
         {
-          "heading": "I---",
+          "heading": "I",
           "items": [
             "დემენცია",
             "ფრონტოტემპორალური დემენცია",
@@ -742,21 +742,21 @@
           ]
         },
         {
-          "heading": "J---",
+          "heading": "J",
           "items": [
             "დიუშენის კუნთოვანი დისტროფია (DMD)",
             "კიდურ-სარტყლის კუნთოვანი დისტროფიები (LGMD)",
-            "---სარკოგლიკანოპათიები"
+            "სარკოგლიკანოპათიები"
           ]
         },
         {
-          "heading": "K---",
+          "heading": "K",
           "items": [
             "ერექციული დისფუნქცია"
           ]
         },
         {
-          "heading": "L---",
+          "heading": "L",
           "items": [
             "დიაბეტური ტერფი",
             "ნაწოლითი წყლული",
@@ -764,7 +764,7 @@
           ]
         },
         {
-          "heading": "M ---",
+          "heading": "M",
           "items": [
             "ოსტეოართრიტი (III და IV ხარისხი)",
             "ავასკულარული ნეკროზი, ასეპტიკური ნეკროზი",
@@ -807,7 +807,7 @@
             "C9 ფსორიაზი",
             "C10 შოგრენის სინდრომი",
             "C11 SLE - სისტემური წითელი მგლურა",
-            "C12ქუსლის დეზი - პლანტარული ფასციიტი",
+            "C12 ქუსლის დეზი - პლანტარული ფასციიტი",
             "C13 წყლულოვანი კოლიტი"
           ]
         }
